@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>楼层跳跃</title>
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body,html{
+            height: 100%;
+        }
+
+        ul{
+            height: 100% ;
+            background-color: orange;
+            border: 5px solid #000;
+
+        }
+
+        ul li{
+            height: 100%;
+        }
+
+
+
+        ol{
+            list-style: none;
+            position: fixed;
+            top: 80px;
+            left: 50px;
+        }
+
+        ol li{
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 50px;
+            margin-top: -1px;
+            cursor: pointer;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+<ul>
+    <li>第1层区域</li>
+    <li>第2层区域</li>
+    <li>第3层区域</li>
+    <li>第4层区域</li>
+    <li>第5层区域</li>
+</ul>
+
+<ol>
+    <li>第1层</li>
+    <li>第2层</li>
+    <li>第3层</li>
+    <li>第4层</li>
+    <li>第5层</li>
+</ol>
+
+<script>
+    var ulEle = document.getElementsByTagName('ul')[0];
+    var olEle = document.getElementsByTagName('ol')[0];
+    var olLiArr = olEle.children;
+    var ulLiArr = ulEle.children;
+    var colors = ['red', 'orange', 'yellow', 'green', 'blue'];
+    var timer = null;
+    var num = 0;
+    for(var i=0; i<olLiArr.length; i++){
+        var olLi = olLiArr[i];
+        var ulLi = ulLiArr[i];
+        // 属性绑定
+        ulLi.style.backgroundColor = colors[i];
+        olLi.style.backgroundColor = colors[i];
+        olLi.indexNum = i;
+
+        olLi.onclick = function () {
+            // 获取索引值
+            var indexNum = this.indexNum;
+            // 获取偏移值(屏幕顶部需要滚动到这里来)
+            var target = ulLiArr[indexNum].offsetTop;
+            // 屏幕顶部当前滚动到的位置
+            var leader =  scroll().top;
+            // 要用定时器, 先清除定时器
+            clearInterval(timer);
+
+            timer = setInterval(function () {
+
+                //(1).获取步长
+                var step = (target - leader) / 10;
+                //(2).二次处理步长
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                //(3).屏幕滑动
+                leader = leader + step;
+                window.scrollTo(0,leader);
+
+                //(4).清除定时器
+                if(Math.abs(target-leader)<= Math.abs(step)){
+                    window.scrollTo(0, target);
+                    clearInterval(timer);
+                }
+            },25);
+
+        }
+
+    }
+
+
+
+
+    // 封装工具获取屏幕的偏移
+    function scroll() {
+        if(window.pageYOffset != null){ // ie9+ 高版本浏览器
+            return {'left': window.pageXOffset,  'top':window.pageYOffset};
+        }
+        else if (document.compatMode === 'CSS1Compat'){ // 标准浏览器 用来判断有没有声明 DTD
+            return {'left': document.documentElement.scrollLeft, 'top': document.documentElement.scrollTop};
+        }
+        // 未申明DTD 的浏览器
+        return {'left':document.body.scrollLeft, 'top':document.body.scrollTop};
+    }
+
+</script>
+
+</body>
+</html>

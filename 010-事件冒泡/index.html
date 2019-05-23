@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件冒泡</title>
+
+    <style>
+        #box1{
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        #box2{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <div id="box1">
+        <div id="box2">
+            <div id="box3"></div>
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+
+    var box1 = document.getElementById("box1");
+    var box2 = document.getElementById("box2");
+    var box3 = document.getElementById("box3");
+
+
+    box1.onclick = function () {
+        console.log("-----box1 被点");
+    }
+
+    box2.onclick = function () {
+        console.log("-----box2 被点");
+    }
+
+    box3.onclick = function () {
+        console.log("-----box3 被点");
+    }
+
+//    box3.ondblclick = function () {
+//        console.log("-----box3 被点 栓剂了 ");
+//    }
+//    box2.ondblclick = function () {
+//        console.log("-----box2 被点 栓剂了 ");
+//    }
+//    box1.ondblclick = function () {
+//        console.log("-----box1 被点 栓剂了 ");
+//    }
+
+
+
+//    box3.onmouseover = function () {
+//        console.log("--------box3 被 onmouseover")
+//    }
+//
+//
+//    box2.onmouseover = function () {
+//        console.log("--------box2 被 onmouseover")
+//    }
+//
+//    box1.onmouseover = function () {
+//        console.log("--------box1 被 onmouseover")
+//    }
+
+</script>
+
+</html>

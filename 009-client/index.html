@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>client 用户</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            padding: 30px;
+            margin: 50px;
+            border: 1px solid #000;
+            background-color: green;
+
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+<div class="box"></div>
+
+</body>
+
+
+<script src="../JSTool/YRJsTool.js "></script>
+
+<script>
+
+   window.onresize = function () {
+
+       // 显示网页的尺寸
+       console.log( "(" + clientSize().width + ","  + clientSize().height + ")" );
+       clientSize()
+   }
+
+</script>
+
+
+</html>

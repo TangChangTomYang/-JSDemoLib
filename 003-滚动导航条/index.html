@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定导航条</title>
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .header{
+            height: 150px;
+            background-color: red;
+        }
+
+        .nav{
+            height: 100px;
+            width: 100%;
+            background-color: green;
+        }
+
+        .content{
+            height: 1500px;
+            background-color: blue;
+            border: 105px solid #000;
+        }
+        
+        .fixed{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="header"></div>
+<div class="nav"></div>
+<div class="content"></div> 
+</body>
+
+
+<script>
+    var nav = document.getElementsByTagName('div')[1];
+    var header = document.getElementsByTagName('div')[0];
+    var content =  document.getElementsByTagName('div')[2];
+    window.onscroll = function () {
+
+        console.log(scroll().top + '--------' + header.offsetHeight);
+        if (scroll().top >= header.offsetHeight){
+            if (nav.className != 'nav fixed'){
+                nav.className = 'nav fixed';
+                content.style.marginTop = nav.offsetHeight + 'px';
+            }
+        }
+        else {
+            if(nav.className != 'nav'){
+                nav.className = 'nav';
+                content.style.marginTop = '0px';
+            }
+
+        }
+    }
+    
+    
+    
+    function scroll() {
+        return {'top': window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
+        'left':window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft};
+    }
+</script>
+</html>

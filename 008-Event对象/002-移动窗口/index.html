@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动窗口</title>
+
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .nav{
+            height: 30px;
+            background-color: green;
+        }
+
+        .wind{
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            border: 2px solid #CCC;
+        }
+
+        .hd{
+            height: 30px;
+            background-color: #cccccc;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        i{
+            float: left;
+            line-height: 30px;
+            margin-left: 10px;;
+        }
+
+        span{
+            float: right;
+            margin-right: 10px;;
+            line-height: 30px;
+        }
+        .bd{
+            width: 300px;
+            height: 170px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <a href="#">注册信息</a>
+    </div>
+
+    <div class="wind">
+        <div class="hd">
+            <i>注册信息(点击可以拖动)</i>
+            <span>[关闭]</span>
+        </div>
+        <div class="bd"></div>
+    </div>
+
+</body>
+
+
+
+
+<script src="../../JSTool/YRJsTool.js" ></script>
+<script>
+    var wind = document.getElementsByClassName("wind")[0];
+    var hd = document.getElementsByClassName("hd")[0] ;
+
+    /**
+     * 鼠标按下事件: onmousedown
+     * 鼠标弹起事件: onmouseup
+     * 鼠标移动事件: onmousemove
+     */
+
+
+
+    function hdEventPoint(event) {
+        var point = touchPoint(event);
+        var  x1 = point.x -  wind.offsetLeft;
+        var  y1 = point.y -  wind.offsetTop;
+
+        return {x:x1, y:y1};
+    }
+
+    //要保证点击后才能拖动. 需要在点击事件内注册 鼠标拖动事件
+    var p = {x:0, y:0};
+    hd.onmousedown = function () {
+        console.log("鼠标点下");
+
+        var  pp = hdEventPoint(event);
+        document.onmousemove = function () {
+            var point = touchPoint(event);
+            var left = (point.x - pp.x);
+            var top = (point.y - pp.y);
+            if (left < 0){
+                left = 0;
+            }
+//            else   if(left > document.body.offsetWidth - wind.offsetWidth){
+//                left = document.body.offsetWidth - wind.offsetWidth;
+//            }
+//
+//            if (top < 50){
+//                top = 50;
+//            }
+//            else  if(top > document.body.offsetHeight - wind.offsetHeight){
+//                top = document.body.offsetHeight - wind.offsetHeight;
+//            }
+
+            wind.style.left = left+ "px";
+            wind.style.top = top + "px";
+
+            // 禁止文本选中(选中后取消)
+            window.getSelection() ? window.getSelection().removeAllRanges() : document.selection.empty();
+        }
+    }
+
+
+    hd.onmouselea = function () {
+        console.log("-------鼠标弹起--------");
+        document.onmousemove = null;
+    }
+
+
+
+
+
+</script>
+
+
+</html>

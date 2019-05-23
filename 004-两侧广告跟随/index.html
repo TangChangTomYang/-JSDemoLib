@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两侧广告跟随</title>
+
+    <style>
+        div{
+         color: red;
+         text-align: center;
+        }
+
+
+        .left{
+          position: absolute;
+          left: 0px;
+          top: 100px;
+        }
+
+       .right{
+        position: absolute;
+        right: 0px;
+        top: 100px;;
+       }
+
+
+    </style>
+
+</head>
+<body>
+
+<img class="left" src="images/aside.jpg" alt="侧边栏广告">
+<img class="right" src="images/aside.jpg" alt="侧边栏广告">
+
+<div>
+
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+ 成都市 郫县 高新区<br>
+
+</div>
+
+</body>
+<script src="../JSTool/YRJsTool.js"></script>
+<script>
+    var left = document.getElementsByTagName('img')[0];
+    var right = document.getElementsByTagName('img')[1];
+
+    window.onscroll = function () {
+      // 获取被卷曲的头部
+     var head = scroll().top;
+     animateMove_V(left, head + 100);
+     animateMove_V(right, head + 100);
+    }
+
+</script>
+</html>

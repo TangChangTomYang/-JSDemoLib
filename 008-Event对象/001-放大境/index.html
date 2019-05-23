@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .box{
+            width: 250px;
+            height: 250px;
+            margin: 200px;
+            border: 1px solid #000;
+            position: relative;
+
+        }
+
+        .small{
+            position: relative;
+
+        }
+
+        .small img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .big{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            left: 360px;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+
+        .big img{
+            position:  absolute;
+
+        }
+
+
+        /*mask 尺寸 / small的尺寸  = big 尺寸/ bigimage尺寸*/
+        .mask{
+            width: 125px;
+            height: 125px;
+            background-color: rgba(255,255,0,0.4);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+
+    <div class="small">
+        <img src="images/small.jpg" alt="小图">
+        <div class="mask"></div>
+    </div>
+    
+    <div class="big">
+        <img src="images/big.jpg" alt="大图">
+    </div>
+</div>
+
+</body>
+
+
+<script src="../../JSTool/YRJsTool.js" ></script>
+<script>
+//    放大镜原理
+//    小图挪动多少, 大图就等比挪动多少
+    var box = document.getElementsByClassName("box")[0];
+    var small = box.firstElementChild || box.firstChild;
+    var mask = small.children[1] ;
+    var big = box.children[1];
+    var bigIamge = big.children[0];
+
+    var isShowBig = false;
+
+
+    function showOrHideBig(showOrHide) {
+        if (showOrHide == true && isShowBig == false){
+            isShowBig = true;
+            mask.style.display = "block";
+            big.style.display = "block";
+            console.log('------------------show--------');
+        }
+        else if (showOrHide == false && isShowBig == true){
+            isShowBig = false;
+            mask.style.display = "none";
+            big.style.display = "none";
+            console.log('------------------hide--------');
+        }
+    }
+
+
+/**
+ *技术点: 使用ommouseenter, 不使用onmouseover, onmouseenter==onmouseover, 只是onmousseenter第一个不冒泡
+ *技术点: 使用onmouseleave, 不使用onmouseout onmouseleave==onmouseout, 只是onmouseleave第一个不冒泡
+ */
+
+    small.onmouseenter = function () {
+        showOrHideBig(true);
+    }
+    small.onmouseleave = function () {
+        showOrHideBig(false);
+    }
+
+    // 在small 盒子里移动鼠标
+    small.onmousemove = function () {
+        // 获取鼠标在small 中的位置
+        var point = touchPoint(event);
+        var  x = point.x -  this.parentNode.offsetLeft;
+        var  y = point.y -  this.parentNode.offsetTop;
+
+        var maskWidth = mask.offsetWidth ;
+        var maskHeight = mask.offsetHeight;
+        var smallWidht = this.offsetWidth;
+        var smallHeight = this.offsetHeight;
+
+
+
+        var left = x - maskWidth * 0.5;
+        var top = y - maskHeight * 0.5;
+        if(left <  0 ){
+            left = 0;
+        }
+        else  if( left >  (smallWidht - maskWidth) ){
+            left = (smallWidht - maskWidth);
+        }
+        if(top <  0){
+            top = 0;
+        }
+        else  if( top >  (smallHeight - maskHeight) ){
+            top = (smallHeight - maskHeight);
+        }
+        mask.style.left = left + "px";
+        mask.style.top = top + "px";
+
+        var scale =  (bigIamge.offsetWidth - big.offsetWidth) / (smallWidht - mask.offsetWidth);
+        bigIamge.style.left = -left*scale+ "px";
+        bigIamge.style.top =  -top*scale + "px";
+
+    }
+
+
+//    small.onmouseover = function () {
+//
+//            console.log("onmouseover----- " + event.target.className);
+//        showOrHideBig(true);
+//    }
+
+//    small.onmouseout = function () {
+//        console.log("onmouseout------ " + event.target.className);
+//        showOrHideBig(false);
+//    }
+
+
+</script>
+
+</html>

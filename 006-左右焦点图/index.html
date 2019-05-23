@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右焦点图</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .box{
+            width: 490px;
+            height: 170px;
+            padding: 5px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+
+        .content{
+            width: 490px;
+            height: 170px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        ul{
+            width: 500%;
+            list-style: none;
+            position: absolute;
+            left: 0px;
+        }
+
+        li{
+            float: left;
+        }
+
+
+        .square{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 0px;
+        }
+
+
+        .leftRight{
+            background-color: yellow;
+
+        }
+
+        span{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            margin-top:-20px;
+            background-color: green;
+            background: #000;
+            cursor: pointer;
+            color: #fff;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            opacity: 0.3;
+        }
+
+        .right{
+            right: 0px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div class="box">
+    <div class="content">
+        <ul>
+            <li><img src="../005-滑动焦点图/images/01.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/02.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/03.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/04.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/05.jpg" alt=""></li>
+        </ul>
+
+        <div class="leftRight">
+            <span class="left"><</span>
+            <span class="right">></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="../JSTool/YRJsTool.js" ></script>
+<script>
+    var ulEle = document.getElementsByTagName('ul')[0];
+    var liCount = ulEle.children.length;
+
+    var spanArr = document.getElementsByTagName('span');
+
+    var index = 0;
+
+    function span1Action() {
+
+        if (index <= 0){
+            return;
+        }
+        index--;
+        var left = index * getFirstChild(ulEle).offsetWidth;
+        animateMove_H(ulEle, -left);
+
+
+    };
+
+    function span2Action() {
+        if (index >= liCount-1){
+            return;
+        }
+        index++;
+        var left = index * getFirstChild(ulEle).offsetWidth;
+        animateMove_H(ulEle, -left);
+
+    };
+
+    spanArr[0].onclick =  span1Action;
+    spanArr[1].onclick =  span2Action;
+
+</script>

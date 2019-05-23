@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滑动焦点图</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .box{
+            width: 490px;
+            height: 170px;
+            padding: 5px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+
+        .content{
+            width: 490px;
+            height: 170px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        ul{
+            width: 500%;
+            list-style: none;
+            position: absolute;
+            left: 0px;
+        }
+
+        li{
+            float: left;
+        }
+
+        .content ol{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid green;
+            width: 150px;
+            height: 50px;
+            list-style: none;
+        }
+        
+        .content ol li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+
+        }
+
+        .content ol li.current{
+            background-color: yellow;
+        }
+
+
+        .current2{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 2px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+
+        #leftRight{
+            width: 490px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            margin-top: -20px;
+        }
+
+        #leftRight span{
+            background-color: #000;
+            opacity: 0.3;
+            width: 40px;
+            height: 40px;
+            color: white;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            border: 0px solid #000;
+        }
+
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div class="box">
+    <div class="content">
+        <ul>
+            <li><img src="../005-滑动焦点图/images/01.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/02.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/03.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/04.jpg" alt=""></li>
+            <li><img src="../005-滑动焦点图/images/05.jpg" alt=""></li>
+        </ul>
+
+        <ol>
+
+        </ol>
+
+        <!--<div id="leftRight">-->
+            <!--<span class="left"><</span>-->
+            <!--<span class="right">></span>-->
+
+        <!--</div>-->
+    </div>
+</div>
+</body>
+</html>
+
+<script src="../JSTool/YRJsTool.js" ></script>
+<script>
+
+    var ulEle = document.getElementsByTagName('ul')[0];
+    ulEle.originLiCount = ulEle.children.length;
+    var olEle = document.getElementsByTagName('ol')[0];
+
+    olEle.style.backgroundColor = 'pink';
+    console.log("======================" + olEle +  ulEle.originLiCount );
+
+    // 复制第一张图片所在的li, 添加到ul的最后面
+    var ulLiCopy = getFirstChild(ulEle).cloneNode(true);
+    ulEle.appendChild(ulLiCopy);
+
+    // 给ol 中添加li, 个数为ulEle 中子元素-1, 并点亮第一个盒子
+    for(var i=0; i<ulEle.originLiCount; i++){
+        var olNewLi = document.createElement("li");
+        olNewLi.innerText = i+'';
+        olEle.appendChild(olNewLi);
+
+        console.log("------------" + i);
+        if (i == 0){
+            olNewLi.className = "current";
+        }
+        else {
+            olNewLi.className = "current2";
+        }
+    }
+
+
+
+
+</script>

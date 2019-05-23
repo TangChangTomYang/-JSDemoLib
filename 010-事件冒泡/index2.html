@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件冒泡</title>
+
+    <style>
+        #box1{
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        #box2{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div id="box1">
+    <div id="box2">
+        <div id="box3"></div>
+    </div>
+</div>
+
+</body>
+
+
+<script>
+
+    var box1 = document.getElementById("box1");
+    var box2 = document.getElementById("box2");
+    var box3 = document.getElementById("box3");
+
+
+    box1.onclick = function () {
+        console.log("-----box1 被点");
+        console.log(event.target);
+    }
+
+    box2.onclick = function () {
+        console.log("-----box2 被点");
+
+//        if(event.stopPropagation()){
+//            event.stopPropagation();
+//        }
+//        else {
+//             event.cancelBubble = true;
+//        }
+        console.log(event.target);
+    }
+
+    box3.onclick = function () {
+        console.log("-----box3 被点  - 阻止冒泡");
+        //阻止冒泡
+        console.log(event.target);
+        console.log(this);
+        var i = 100;
+        while(i > 0){
+            console.log(1);
+            i -- ;
+        }
+
+
+    }
+
+    // 捕获顺序
+    // 冒泡顺序
+//    var capture = true;
+//    box1.addEventListener("click", function () {
+//        console.log(" box1    click ");
+//    },capture); // capture 表示是否要捕获事件
+//
+//    var capture = true;
+//    box2.addEventListener("click", function () {
+//        console.log(" box2    click ");
+//    },capture); // capture 表示是否要捕获事件
+//
+//    var capture = true;
+//    box3.addEventListener("click", function () {
+//        console.log(" box3    click ");
+//    },capture); // capture 表示是否要捕获事件
+
+
+//    // 捕获: 从上往下执行事件
+//    // 冒泡: 从下往上冒
+//    var btn = null;
+//    // 判断一个事件是否冒泡
+//    btn.onclick = function () {
+//        console.log(event.bubbles)
+//    }
+
+
+
+</script>
+
+</html>
