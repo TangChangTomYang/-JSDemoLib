@@ -91,6 +91,51 @@
 
         var box = document.getElementsByClassName('box')[0];
 
+
+        /**
+         * 关于HTML 中 标签元素的位置概述
+         *
+         * offset家族概述
+         * 1> 想要获取 标签元素距离父元素左上角的位置使用  ele.offsetLeft  和 ele.offsetTop
+         * 2> 想要获取 标签元素的宽度和高度, 使用 ele.offsetWidth 和 ele.offsetHeight
+         *
+         * offsetLeft offsetTop offsetWidth offsetHeight 与 style.left style.top style.width style.height 的差异
+             * 1> 只有通过行内样式设置过, style.left, style.top style.width style.height属性后 ,
+             * 或者直接通过style.left, style.top style.width style.height设置过属性,
+             * 才能通过 style.left, style.top style.width style.height 获取相应的属性值,
+             * 仅仅是通过 CSS属性设置过是获取不到任何值的. 而 通过offsetLeft/ offsetTop/ offsetWidht/ offsetHeight 在任何时候都可以获取到属性值
+             * 2> 通过 style 属性获取到的 left top width heigth 属性值是带 'px' 单位的字符串且可以是小数, 而通过offsetLeft/ offsetTop/ offsetWidth/ offsetHeight
+             * 获取到的属性值是纯数字 且都是整数没有小数
+         *
+         *
+         * scroll家族概述
+         * 1> scrollTop/ scrollLeft 获取到的是当前网页被当前窗口卷去的部分, 且各浏览器 对于scrollLeft/scrollTop 有兼容性问题
+         * 2> 通过scrollWidth/ scrollHeight 获取到的是标签内容的宽度和高度, 类似于 iOS 中的contentSize
+         * 3> 网页左上角偏移量(被窗口卷去的部分)的兼容性写法
+         *  function pageoffset() {
+                        return {"x": window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollHeight,
+                                "y" : window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop};
+              }
+         *
+         *
+         * client 家族介绍
+         *
+         * 1> 在js 的event事件对象中, 我们通过event 对象可以获取 event.pageY / event.pageX , event.screenY / event.screntX, event.clientX / event.clientY
+         *
+         * 2> pageX 和 pageY指的是鼠标点击的位置距离网页左上角的位置, 各浏览器存在兼容性问题
+         * 3> screenX 和 screenY 指的是鼠标点击位置距离当前显示屏左上角的位置
+         * 4> clientX 和 clientY指的是鼠标点击的位置距离当前浏览器窗口的左上角的可视区域
+         *
+         * 点击位置距离网页左上角的位置兼容性写法
+         * function  pageXY(event) {
+                 return {"x": (event.pageX || event.clientX + pageoffset().x),
+                         "y":(event.pageY || event.clientY + pageoffset().y)};
+                }
+         *
+         */
+
     </script>
 </body>
 </html>
+
+
