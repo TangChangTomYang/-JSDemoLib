@@ -123,10 +123,14 @@
 
     window.onscroll = function () {
       // 获取被卷曲的头部
-     var head = scroll().top;
+     var head = pageOffset().y;
+     console.log("offsetY:" +  head);
      animateMove_V(left, head + 100);
      animateMove_V(right, head + 100);
     }
+
+
+
 
 </script>
 </html>

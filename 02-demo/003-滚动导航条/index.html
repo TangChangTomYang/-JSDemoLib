@@ -56,12 +56,14 @@
         if (scroll().top >= header.offsetHeight){
             if (nav.className != 'nav fixed'){
                 nav.className = 'nav fixed';
+                // 增加这个margin 是为了让, nav fix 后(脱离标准流后不占位置), content 不塌陷
                 content.style.marginTop = nav.offsetHeight + 'px';
             }
         }
         else {
             if(nav.className != 'nav'){
                 nav.className = 'nav';
+                // 减去这个margin 是因为 nav 取消 fix 后, 插入标准流要占位置, 把多去的部分减去
                 content.style.marginTop = '0px';
             }
 
@@ -69,7 +71,8 @@
     }
     
     
-    
+
+//    获取页面偏移量 contentOffset
     function scroll() {
         return {'top': window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
         'left':window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft};

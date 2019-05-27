@@ -98,6 +98,7 @@
             spanArr[a].className = '';
         }
         this.className = 'current';
+//        offsetWidth 就是 标签的宽度
         var left = this.indexNum * getFirstChild(ulEle).offsetWidth;
         animateMove_H(ulEle, -left);
     };

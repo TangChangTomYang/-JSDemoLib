@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scroll家族介绍</title>
+
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            display: inline;
+            line-height: 150px;
+            font-size: 50px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!--scroll家族介绍
+
+        1> scrollWidth/ scrollHeight 是用来检测盒子内容宽高的
+
+        2> 如果盒子设置了宽高, 当内容没有将盒子填充满时, 就位盒子的宽高, 当内容超过了盒子的范围 就是内容的宽高
+
+        3> 注意点:
+            1) 当盒子是块级/ 行内块级时, 如果内容超过了盒子的容量, 宽度就位盒子的宽度, 内容的高度就会高出盒子
+            2) 当盒子为行内时, 不论内容超过多少折了多少弯弯, 内容的高度就位行内元素的文字的高度, 和行高没关系, 宽度就位内容的长度
+
+    -->
+
+
+
+
+    <!--
+        scrollTop/ scrollLeft 网页被浏览器 遮住的头部和左边的部分, 被卷去的左边和头部的部分
+
+        1> scrollleft/ scrollTop 有兼容性问题
+
+        2> 未声明 DTD (谷歌只认识它)
+            document.body.scrollTop
+        3> 已经声明 DTD (IE 678 只认识它)
+            document.documentElement.scrollTop
+        4> 火狐/谷歌/IE9+以上支持
+            window.pageYOffset
+
+        兼容写法:
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+
+
+
+    -->
+
+
+    <div class="box">
+
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+        scrollWidth 和 scroll 是 用来检测盒子内容的宽高的
+
+
+
+    </div>
+</body>
+
+<script>
+    var box = document.getElementsByClassName("box")[0];
+    console.log(box.scrollWidth);
+    console.log(box.scrollHeight);
+</script>
+</html>

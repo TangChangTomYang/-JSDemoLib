@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>屏幕滚动</title>
+    <style>
+
+        .box{
+            width: 5000px;
+            height: 5000px;
+            background: pink;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- onScroll 事件
+
+    只要屏幕上有滚动就会调用这个方法
+
+
+    -->
+
+        <div class="box">
+
+        </div>
+
+    <script>
+        var index  = 0;
+        // 只要 屏幕滚动就会调用这个方法
+        window.onscroll = function () {
+            console.log(index++)
+        }
+
+    </script>
+</body>
+
+
+
+
+</html>

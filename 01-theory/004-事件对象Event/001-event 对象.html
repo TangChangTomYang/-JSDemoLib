@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event 对象</title>
+
+
+</head>
+<body>
+
+
+<!--
+    1> 在触发DOM 上的某个事件时, 会产生一个事件对象 event, 这个对象中包含着所有与事件有关的信息
+
+    2> 所有的浏览器都支持 event对象, 但是支持的方式不同
+
+    3> event 对象的兼容性写法是在事件方法中直接使用即可
+
+
+    4> event 事件的重要内容
+        1) timeStamp 返回事件生生的日期和时间, 从网页加载完那一刻开始计算
+        2) bubbles 返回布尔值, 指示事件是否是气泡事件类型
+        3) pageX 光标相对于该网页的水平位置 (ie 无)
+        4) pageY 光标相对于网页的垂直距离 (ie 无)
+        5) screenX  光标相对于该屏幕的水平位置
+        6) screenY  光标相对于该网页的垂直位置
+
+        7) target 该事件被传递到的对象
+        8) type 事件的类型
+        9) clientX 光标相对于网页的水平位置 (当前的可视区)
+        10)  clientY
+-->
+
+
+<script>
+
+    var box = document.getElementsByClassName("box")[0];
+
+    box.onclick = function () {
+        event //是一个内置对象, 直接在事件方法内调用即可
+
+    }
+</script>
+</body>
+</html>

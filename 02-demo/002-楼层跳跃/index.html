@@ -23,7 +23,7 @@
         }
 
         ul li{
-            height: 100%;
+            height: 50%;
         }
 
 
@@ -68,9 +68,13 @@
 </ol>
 
 <script>
+    //    获取最大的容器ul
     var ulEle = document.getElementsByTagName('ul')[0];
+    //    获取按钮的容器ol
     var olEle = document.getElementsByTagName('ol')[0];
+    //    获取所有的按钮
     var olLiArr = olEle.children;
+    //    获取所有的要方砖
     var ulLiArr = ulEle.children;
     var colors = ['red', 'orange', 'yellow', 'green', 'blue'];
     var timer = null;
