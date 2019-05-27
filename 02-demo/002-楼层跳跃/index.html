@@ -27,6 +27,12 @@
         }
 
 
+        /*注意:
+           1>  默认情况下body 和 html  是没有设置高度的, 如果我们想要 body 和 html 的高度和屏幕的高度一致,
+            需要 给 body 和 html 设置高度为 height=100%
+           2> 默认情况下, 元素的宽度是会继承的, 高度是不会继承的
+        */
+
 
         ol{
             list-style: none;
@@ -105,6 +111,8 @@
                 step = step > 0 ? Math.ceil(step) : Math.floor(step);
                 //(3).屏幕滑动
                 leader = leader + step;
+
+//                window.scrollTo(left,top); 专门用来滚动页面
                 window.scrollTo(0,leader);
 
                 //(4).清除定时器

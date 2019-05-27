@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标在盒子中的位置</title>
+    <style>
+
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+
+    </div>
+</body>
+
+
+<script>
+
+    // 获取鼠标在盒子中的位置
+    // 1. 获取鼠标 距离网页左上角的位置 pageXY
+    // 2. 使用pageXY 减去 当前盒子的左边距离和上边距离就是鼠标在当前盒子中的位置
+
+
+
+    // 获取当前网页被当前窗口卷去的部分
+    function pageoffset() {
+       return {"x": window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollHeight,
+        "y" : window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop};
+    }
+
+
+    // 获取鼠标 距离当前网页 左上角的位置
+    function  pageXY(event) {
+        return {"x": (event.pageX || event.clientX + pageoffset().x),
+        "y":(event.pageY || event.clientY + pageoffset().y)};
+    }
+
+    var box = document.getElementsByClassName("box")[0];
+    box.onclick = function () {
+        console.log(pageXY(event))
+        var pointX = pageXY(event).x - this.offsetLeft;
+        var pointY = pageXY(event).y - this.offsetTop;
+
+        console.log('x:' + pointX + ', y:' + pointY);
+
+    }
+
+
+
+</script>
+</html>

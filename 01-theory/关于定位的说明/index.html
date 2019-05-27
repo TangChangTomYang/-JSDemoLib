@@ -2,9 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>网页元素的定位</title>
+
+    <style>
+
+
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            border: 10px solid red;
+            margin: 20px;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+
+
+
+
+    <!--
+    1> 想要获取元素的 x y 就使用 offsetLeft  和OffsetTop
+
+    2> 想要获取元素的宽高 就是用 offsetWidth 和 offsetHeight
+
+    3> 想要获取元素的内容的宽高 就是用 scrollWith 和 scrollHeight
+
+    4> 要想获取网页被窗口卷去了多少 使用 scrollTop /pageYoffset scrollLeft / pageXOffset
+
+        兼容性写法:
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft
+
+    5 > 想要获取鼠标的位置
+
+
+
+     -->
+
+    <div class="box">
+        我是div
+        我是div
+        我是div
+        我是div我是div
+        我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div
+        我是div
+        我是div
+        我是div
+        我是div我是div
+        我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div
+        我是div
+        我是div
+        我是div
+        我是div我是div
+        我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div
+        我是div
+        我是div
+        我是div
+        我是div我是div
+        我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div
+        我是div
+        我是div
+        我是div
+        我是div我是div
+        我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div
+        我是div
+        我是div
+        我是div
+        我是div我是div
+        我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div
+        我是div
+        我是div
+        我是div我是div
+        我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div我是div
+    </div>
+
+
+    <script>
+
+        var box = document.getElementsByClassName('box')[0];
+
+    </script>
 </body>
 </html>

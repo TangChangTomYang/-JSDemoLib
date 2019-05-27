@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <title>event 对象</title>
 
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
 
 </head>
 <body>
+
+
+<!--
+pageY
+
+-->
+
 
 
 <!--
@@ -28,18 +42,55 @@
         7) target 该事件被传递到的对象
         8) type 事件的类型
         9) clientX 光标相对于网页的水平位置 (当前的可视区)
-        10)  clientY
+        10) clientY
 -->
+
+
+<div class="box">
+
+</div>
 
 
 <script>
 
-    var box = document.getElementsByClassName("box")[0];
+//    var box = document.getElementsByClassName("box")[0];
+//
+//    box.onclick = function () {
+//        //event 是一个内置对象, 直接在事件方法内调用即可
+//        console.log(event);
+//
+//    }
 
-    box.onclick = function () {
-        event //是一个内置对象, 直接在事件方法内调用即可
+    // 表示点击页面的任意位置
+    document.onclick = function () {
+        console.log(event);
+        console.log(event.timeStamp); // 时间戳
+        console.log(event.bubbles);   // 是否支持冒泡
+        console.log(event.button);    // 是鼠标的那个键 点击的 左=0 滚轮=1 右=2
+        console.log(event.pageX);
+        console.log(event.pageY);
+        console.log(event.screenX);
+        console.log(event.screenY);
+        console.log(event.target);    // 点在那个标签上了
+        console.log(event.type);      // 事件类型
+        console.log(event.clientX);
+        console.log(event.clientY);
+
 
     }
 </script>
 </body>
 </html>
+
+
+
+
+
+<!--
+关于页面位置的信息
+
+    offsetLeft/ offsetWidth  使用来获取元素的
+
+
+
+-->

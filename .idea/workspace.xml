@@ -2,36 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a218540d-2254-41d6-aae2-20071cfd0f90" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/001-轮播图/images/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/001-轮播图/images/02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/001-轮播图/images/03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/001-轮播图/images/04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/001-轮播图/images/05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/001-轮播图/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/002-楼层跳跃/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/003-滚动导航条/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/004-两侧广告跟随/images/aside.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/004-两侧广告跟随/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/005-滑动焦点图/images/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/005-滑动焦点图/images/02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/005-滑动焦点图/images/03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/005-滑动焦点图/images/04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/005-滑动焦点图/images/05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/005-滑动焦点图/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/006-左右焦点图/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/007-定时无缝轮播图/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/008-Event对象/001-放大境/images/big.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/008-Event对象/001-放大境/images/small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/008-Event对象/001-放大境/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/008-Event对象/002-移动窗口/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/008-Event对象/003-滚动条/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/008-Event对象/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/009-client/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/010-事件冒泡/001-隐藏模态窗口/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/010-事件冒泡/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/010-事件冒泡/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JSTool" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02-demo/011-鼠标在盒子中的位置/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02-demo/JSTool" afterPath="$PROJECT_DIR$/02-demo/JSTool" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01-theory/001-Offset家族/001-offset家族介绍.html" afterPath="$PROJECT_DIR$/01-theory/001-Offset家族/001-offset家族介绍.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01-theory/002-Scroll家族/001-scroll家族介绍.html" afterPath="$PROJECT_DIR$/01-theory/002-Scroll家族/001-scroll家族介绍.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01-theory/004-事件对象Event/001-event 对象.html" afterPath="$PROJECT_DIR$/01-theory/004-事件对象Event/001-event 对象.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.html" afterPath="$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01-theory/关于定位的说明/index.html" afterPath="$PROJECT_DIR$/01-theory/关于定位的说明/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02-demo/002-楼层跳跃/index.html" afterPath="$PROJECT_DIR$/02-demo/002-楼层跳跃/index.html" />
     </list>
     <ignored path=" JSDemoLib.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +33,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="001-offset家族介绍.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="001-offset家族介绍.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-theory/001-Offset家族/001-offset家族介绍.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="001-event 对象.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/001-event 对象.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageYClientYScreenY.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageYClientYScreenY.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/关于定位的说明/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="002-屏幕滚动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/002-Scroll家族/002-屏幕滚动.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="001-scroll家族介绍.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/002-Scroll家族/001-scroll家族介绍.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-demo/002-楼层跳跃/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,8 +113,22 @@
       <file leaf-file-name="YRJsTool.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-demo/JSTool/YRJsTool.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="416">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="58" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc;n#screenSize#0" expanded="true" />
+                <element signature="n#!!doc;n#touchPoint#0" expanded="true" />
+                <element signature="n#!!doc;n#pageOffset#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02-demo/011-鼠标在盒子中的位置/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -106,6 +166,14 @@
         <option value="$PROJECT_DIR$/002-楼层跳跃/index.html" />
         <option value="$PROJECT_DIR$/005-滑动焦点图/index.html" />
         <option value="$PROJECT_DIR$/JSTool/YRJsTool.js" />
+        <option value="$PROJECT_DIR$/01-theory/关于定位的说明/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/001-Offset家族/001-offset家族介绍.html" />
+        <option value="$PROJECT_DIR$/02-demo/002-楼层跳跃/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/002-Scroll家族/001-scroll家族介绍.html" />
+        <option value="$PROJECT_DIR$/01-theory/004-事件对象Event/001-event 对象.html" />
+        <option value="$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.html" />
+        <option value="$PROJECT_DIR$/02-demo/JSTool/YRJsTool.js" />
+        <option value="$PROJECT_DIR$/02-demo/011-鼠标在盒子中的位置/index.html" />
       </list>
     </option>
   </component>
@@ -116,8 +184,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="407" />
-    <option name="y" value="24" />
+    <option name="x" value="370" />
+    <option name="y" value="23" />
     <option name="width" value="1090" />
     <option name="height" value="1008" />
   </component>
@@ -156,6 +224,152 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="011-鼠标在盒子中的位置" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="02-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01-theory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="关于定位的说明" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01-theory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="004-事件对象Event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01-theory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01-theory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="002-Scroll家族" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSDemoLib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01-theory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="001-Offset家族" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -171,6 +385,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01-theory/004-事件对象Event" />
       <recent name="$PROJECT_DIR$/008-Event对象/001-放大境/images" />
       <recent name="$PROJECT_DIR$/005-滑动焦点图/images" />
       <recent name="$PROJECT_DIR$/004-两侧广告跟随/images" />
@@ -259,33 +474,33 @@
       <workItem from="1558686010570" duration="985000" />
       <workItem from="1558923411143" duration="71000" />
       <workItem from="1558923487676" duration="141000" />
-      <workItem from="1558923797700" duration="5000" />
+      <workItem from="1558923797700" duration="9665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71191000" />
+    <option name="totallyTimeSpent" value="80851000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="407" y="24" width="1090" height="1008" extended-state="0" />
-    <editor active="false" />
+    <frame x="370" y="23" width="1090" height="1008" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23947614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23947614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -332,14 +547,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/007-定时无缝轮播图/index.html" />
-    <entry file="file://$PROJECT_DIR$/002-楼层跳跃/index.html" />
-    <entry file="file://$PROJECT_DIR$/JSTool/YRJsTool.js" />
-    <entry file="file://$PROJECT_DIR$/002-楼层跳跃/index.html" />
-    <entry file="file://$PROJECT_DIR$/004-两侧广告跟随/index.html" />
-    <entry file="file://$PROJECT_DIR$/005-滑动焦点图/index.html" />
-    <entry file="file://$PROJECT_DIR$/006-左右焦点图/index.html" />
-    <entry file="file://$PROJECT_DIR$/007-定时无缝轮播图/index.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19024">
@@ -411,18 +618,83 @@
     <entry file="file://$PROJECT_DIR$/008-Event对象/001-放大境/index.html" />
     <entry file="file://$PROJECT_DIR$/JSTool/YRJsTool.js" />
     <entry file="file://$PROJECT_DIR$/010-事件冒泡/001-隐藏模态窗口/index.html" />
-    <entry file="file://$PROJECT_DIR$/02-demo/JSTool/YRJsTool.js">
+    <entry file="file://$PROJECT_DIR$/01-theory/002-Scroll家族/002-屏幕滚动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/关于定位的说明/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-theory/001-Offset家族/001-offset家族介绍.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+        <state relative-caret-position="368">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/002-楼层跳跃/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/002-Scroll家族/001-scroll家族介绍.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/001-event 对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/JSTool/YRJsTool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="58" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#screenSize#0" expanded="true" />
+            <element signature="n#!!doc;n#touchPoint#0" expanded="true" />
+            <element signature="n#!!doc;n#pageOffset#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/011-鼠标在盒子中的位置/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding />
         </state>
       </provider>

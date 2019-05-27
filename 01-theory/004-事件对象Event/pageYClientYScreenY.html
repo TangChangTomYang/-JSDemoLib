@@ -2,9 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>pageYScreenYClientY</title>
+
+
+    <style>
+        div{
+            width: 120px;
+            background-color: pink;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <div>
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+        我是测试文字
+
+
+
+
+
+    </div>
+
+<script>
+
+
+/*   关于 clientX 和 pageY 的兼容问题说明
+
+1> clientX 与clientY表示以当前窗口左上角为基准点, 即 鼠标距离当前窗口左边和上边的距离
+2> pageX 与 pageY 表示的是以当前文档左上角为基准点, 鼠标距离当前文档左边和上边的距离, (IE 67 不支持)
+3> screenX 与 screenY 表示以当前显示屏左上角为基准点, 鼠标距离当前显示屏左边和上边的距离
+
+
+也就是说:
+pageX = clientX + scrollLeft
+pageY = clientY + scrollTop;
+问题依然存在, 因为scrollLeft 和 scrollTop 也存在兼容性问题
+
+
+因此为了兼容性, 我们自己实现 pageX和pageY 的第一步是解决 scrollLeft和scrolltop 的兼容性问题
+
+
+ */
+
+// 页面被卷去的部分
+function pageOffset() {
+    if(window.pageYOffset != null){ // ie9+ 高版本浏览器
+        return {'x': window.pageXOffset,  'y':window.pageYOffset};
+    }
+    else if (document.compatMode === 'CSS1Compat'){ // 标准浏览器 用来判断有没有声明 DTD
+        return {'x': document.documentElement.scrollLeft, 'y': document.documentElement.scrollTop};
+    }
+    // 未申明DTD 的浏览器
+    return {'x':document.body.scrollLeft, 'y':document.body.scrollTop};
+}
+
+//  鼠标距离页面左上角的点
+function touchPoint(event) {
+    // pageX pageY 指的是鼠标 距离页面左边和上边的距离, 包含卷去的部分
+    // clientX clientY 表示鼠标距离当前窗口的可视距离
+
+    return {"x" : (event.pageX || pageOffset().x + event.clientX), "y": (event.pageY || pageOffset().y + event.clientY) };
+}
+
+
+    document.onclick = function () {
+        console.log('pageY+'  + event.pageY);
+        console.log('screenY=' + event.screenY);
+        console.log('clientY=' + event.clientY);
+    }
+</script>
+
 </body>
 </html>
