@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>client用户(可视区)</title>
+</head>
+<body>
+
+
+<script>
+
+    /**
+     * 获取当前浏览器窗口的大小
+     * @returns {*}
+     */
+    function browserSize() {
+
+        if(window.innerHeight != undefined){
+            return {"width": window.innerWidth,
+            "height":window.innerHeight};
+        }
+        else  if(document.compatMode === 'CSS1Compat'){
+            return {"width":document.documentElement.clientWidth,
+            "height":document.documentElement.clientHeight};
+        }
+        else {
+            return {"width":document.body.clientWidth,
+            "height": document.body.clientHeight};
+        }
+    }
+
+
+    /**
+     * 点击查看当前浏览器窗口的大小
+     */
+    document.onclick = function () {
+
+        var size = browserSize();
+        console.log(size);
+
+        console.log(size.width + "  " + size.height);
+    }
+
+    /**
+     * 当用户改变浏览器窗口的大小时就会调用
+     */
+    window.onresize = function () {
+        var size = browserSize();
+        console.log(size);
+
+        console.log(size.width + "  " + size.height);
+    }
+
+</script>
+
+
+</body>
+</html>
+
+<!--
+1> clientWidth 获取 '网页' 可视区域宽度(两种方法)
+clientHeight 获取 '网页' 可视区域高度(两种方法)
+
+调用者不同, 意义不同
+盒子调用: 指盒子本身
+body/html调用: 可视区域大小
+
+2> clientX 鼠标距离可视区域左侧距离(event调动)
+clientY 鼠标距离可视区域上侧距离(event调用)
+
+3> clientTop 盒子的 上border
+clientLeft 盒子的 左border
+
+
+
+三大家族的区别1
+
+1> clientWidth = width + padding
+   clientHeight = height + padding
+2> offsetWidth = width + padding + border
+   offsetHeight = height + padding + border
+3> scrollWidth = 内容的宽度 (不包含border)
+   scrollHeight = 内容的高度 (不包含border)
+
+
+
+三大家族区别2
+
+1> offstTop/ offsetLeft
+    调用者任意元素(盒子为主),
+    作用: 距离父系盒子中带定位的距离
+
+2> scrollTop/scrollLeft (盒子也可以调用,必须有滚动条)
+    调用者:  各个浏览器之间有兼容性问题
+    作用: 浏览器无法显示的部分(被卷去的部分)
+
+3> clientX / clientY
+    调用者: event 对象, 表示距离浏览器窗口左边和上边的可视距离
+    (clientTop/clientLeft 指定是上border 和 左border)
+
+
+client家族 之 检测浏览器宽/高(可视区域)
+
+1> ie9+
+        window.innerWidth/ window.innerHeight
+
+    标准模式:(有DTD) ('CSS1Compat')
+        document.documentElement.clientWidth
+        document.cocumentElement.clientHeight
+
+    怪异模式: (没有DTD)
+        document.body.clientWidth
+        document.body.clientHeight
+
+(封装类似 scroll())
+-->
+
+
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览器可视区域宽高</title>
+</head>
+<body>
+
+</body>
+
+<script src="../../02-demo/JSTool/YRJsTool.js"></script>
+<script>
+
+    /**
+     * 根据屏幕的尺寸变换颜色
+     */
+    window.onresize = function () {
+      var size = browserSize();
+        if (size.width <= 640){// 移动端
+
+            document.body.style.backgroundColor = 'red';
+        }else  if(size.width <= 960){ // 平板
+            document.body.style.backgroundColor = 'green';
+        }
+        else { // pc 端
+            document.body.style.backgroundColor = 'blue';
+        }
+    }
+</script>
+</html>
+
+
+
+
+onresize 事件会在窗口或者框架被调整大小时发生
+
+区分:
+1> window.onscroll 屏幕滚动时触发
+2> window.onresize 浏览器窗口调整大小时触发
+3> window.onload 页面加载完成触发
+4> div.onmousemove  鼠标在盒子上移动时触发
