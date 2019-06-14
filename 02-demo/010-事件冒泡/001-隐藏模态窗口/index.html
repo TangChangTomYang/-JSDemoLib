@@ -30,6 +30,7 @@
             cursor: pointer;
             background-color: white;
             margin: 0 auto;
+            margin-top: 100px;
         }
 
     </style>
@@ -38,7 +39,9 @@
 <body>
 
 
+    <!--mask 大小和浏览器一样的, 相当于是一层遮罩-->
     <div class="mask">
+            <!--遮罩内部显示登陆的容器-->
             <div class="login"></div>
     </div>
     <a href="#">点击注册</a>
@@ -46,7 +49,7 @@
 
 </body>
 
-
+<script src="../../JSTool/YRJsTool.js "></script>
 <script>
     // 需求, 点击登录注册, 显示模态窗口, 点击 login 以外的区域 隐藏模态盒子
     // 步骤:
@@ -54,21 +57,34 @@
     // 2. 给document 绑定事件, 因为可以冒泡, 只要判断 点击的不是login , 那么就隐藏盒子
 
     //1. 给登录绑定事件
-    var mask = document.getElementsByClassName("mask")[0];
     var regist_a = document.getElementsByTagName("a")[1];
+    var maskDiv = document.getElementsByClassName("mask")[0];
+    var loginDiv = document.getElementsByClassName("login")[0];
 
 
+    // 点击注册超链接, 显示注册弹窗
     regist_a.onclick = function () {
-        console.log("------ regist_a.onclick--");
+        console.log(" 用户点击了注册超链接 想注册了");
         // 阻止冒泡
 
-        mask.style.display = "block";
-
+        maskDiv.style.display = "block";
     }
 
-    document.onclick = function () {
-        console.log("------ document.onclick--");
+
+    // 点击灰色的遮罩, 隐藏注册弹窗
+    maskDiv.onclick = function () {
+        maskDiv.style.display = 'none';
+        console.log('用户点击了 注册窗口之外, 用户不想注册了');
     }
+
+    // 点击注册窗口, 发送注册请求
+    loginDiv.onclick = function () {
+        console.log('-------正在发送 注册数据');
+        stopEventBubble(event); // 此处必须阻止冒泡
+    }
+
+
+
 
 </script>
 </html>

@@ -37,7 +37,7 @@
 
     3> 想要获取元素的内容的宽高 就是用 scrollWith 和 scrollHeight
 
-    4> 要想获取网页被窗口卷去了多少 使用 scrollTop /pageYoffset scrollLeft / pageXOffset
+    4> 要想获取网页被窗口卷去了多少 使用 scrollTop/pageYoffset     scrollLeft/pageXOffset
 
         兼容性写法:
           var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
@@ -95,6 +95,9 @@
         /**
          * 关于HTML 中 标签元素的位置概述
          *
+         *
+         *
+         *
          * offset家族概述
          * 1> 想要获取 标签元素距离父元素左上角的位置使用  ele.offsetLeft  和 ele.offsetTop
          * 2> 想要获取 标签元素的宽度和高度, 使用 ele.offsetWidth 和 ele.offsetHeight
@@ -108,6 +111,14 @@
              * 获取到的属性值是纯数字 且都是整数没有小数
          *
          *
+         *
+         *
+         *
+         *
+         *
+         *
+         *
+         *
          * scroll家族概述
          * 1> scrollTop/ scrollLeft 获取到的是当前网页被当前窗口卷去的部分, 且各浏览器 对于scrollLeft/scrollTop 有兼容性问题
          * 2> 通过scrollWidth/ scrollHeight 获取到的是标签内容的宽度和高度, 类似于 iOS 中的contentSize
@@ -116,6 +127,13 @@
                         return {"x": window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollHeight,
                                 "y" : window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop};
               }
+         *
+         *
+         *
+         *
+         *
+         *
+         *
          *
          *
          * client 家族介绍

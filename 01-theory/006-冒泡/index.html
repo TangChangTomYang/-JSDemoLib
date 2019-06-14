@@ -6,20 +6,20 @@
 
 
     <style>
-        .box1{
+        .box1,.box11{
             width: 300px;
             height: 300px;
             background-color: red;
             text-align: right;
         }
 
-        .box2{
+        .box2,.box22{
             width: 200px;
             height: 200px;
             background-color: green;
         }
 
-        .box3{
+        .box3,.box33{
             width: 100px;
             height: 100px;
             background-color: blue;
@@ -34,7 +34,24 @@
     </div>
 </div>
 
+<br>
+<div class="box11">1
+    <div class="box22">2
+        <div class="box33">3</div>
+    </div>
+</div>
 
+
+<div class="b1">
+    <div class="b2">
+        <div class="b3">
+            <div class="b4"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../02-demo/JSTool/YRJsTool.js"></script>
 <script>
 
 
@@ -50,11 +67,89 @@
         捕获  冒泡  和 目标阶段
 
         1) 事件捕获阶段:
-        事件从最上一级标签开始往下查询, 直到捕获到事件目标
+            事件从最上一级标签开始往下查询, 直到捕获到事件目标
         2) 事件冒泡阶段:
-        事件从事件目标target开始, 往上冒泡直到页面的最上一级标签
+            事件从事件目标target开始, 往上冒泡直到页面的最上一级标签
 
 
+ 3> 冒泡的顺序:
+    (1)IE6.0
+    div -> body -> html -> document
+
+    (2)其它浏览器 (多一个window):
+    div -> body -> html -> document -> window
+
+    (3) 不是所有的事件都能冒泡, 以下事件不冒泡
+    blur/ focus/ load/ unload/ onmouseenter/ onmouseleave
+
+
+
+ 4> 判断一个事件是否冒泡, 通过事件的 event 对象的 'bubbles' 属性来判断是否冒泡, 当bubbles为true时冒泡
+    当bubbles为false时不冒泡
+
+
+ 5> 如何阻止冒泡
+    (1) w3c 的方法是: (火狐/ 谷歌/ )IE11
+        event.stopPropagation();
+
+    (2) IE10 以下则是使用:
+        event.cancleBubble = true;
+
+    (3) 兼容性写法
+        function stopBubble(event){
+            if(event && event.stopPropagation){
+                event.stopPropagation();
+            }
+            else(
+                event.cancleBubble = true;
+            )
+        }
+
+ 6> 判断事件的目标(事件源)
+    (1) 通过 事件对象event 的 target 属性可以获取到 事件执行的目标是哪个
+    也就是我们可以将这个 target 理解为 鼠标最先点击的 标签元素
+
+    (2) 有时, 我们希望标签绑定的点击事件 ,如: 'div.onclick = function ()' ,只有当用户直接点击在当前标签时才执行
+        通过事件冒泡时不执行, 们 就可以通过 event.target 来判断 目标是不是标签本身, 是本身才执行
+
+    (3) 获取事件触发的对象(事件源)有兼容性问题
+        IE789: event.srcElement
+        火狐谷歌等: event.target
+        兼容性写法:
+        function eventTarget(event){
+            return event.target ? event.target : event.srcElement;
+        }
+
+
+ 7> 冒泡的作用, 及常使用情景
+
+    (1) 当我们想要拦击 当前网页上的所有点击事件时, 不论 你点击的是哪个标签, 我都想知道, 此时我们就可使用 冒泡的特点
+        如下: 我们想在一个方法中来判断, 用户究竟点击的是哪个标签, 我们就可以使用冒泡
+         <div class="b1">
+             <div class="b2">
+                 <div class="b3">
+                     <div class="b4"></div>
+                 </div>
+             </div>
+         </div>
+
+        // 这个就是 冒泡的典型使用情景
+        // 因为任何标签的点击事件都会冒泡过来, 除非阻止了冒泡
+        document.onclick = function(){
+
+            if(event.target == divb1){
+                console.log('用户点击了 div.b1');
+            }
+            else if(event.target == divb2){
+                console.log('用户点击了 div.b2');
+            }
+            else.if(event.target == divb3){
+                console.log('用户点击了 div.b3');
+            }
+            else if(event.target == divb4){
+                console.log('用户点击了 div.b4');
+            }
+        }
 
 
  */
@@ -63,40 +158,64 @@
     var box2 = document.getElementsByClassName('box2')[0] ;
     var box3 = document.getElementsByClassName('box3')[0] ;
 
+//    这两个方法不冒泡
+//    box.onmouseenter();
+//    box.onmouselea();
 
-    box1.onclick = function () {
-        console.log(' 我是box1, 被点了');
+    // 点击事件 (一路 冒泡(事件从子 到 父))
+    box3.onclick = function () {
+        console.log(' 我是box3, 被点了');
+        console.log(event.target);
+//        stopEventBubble(event);
     }
 
     box2.onclick = function () {
         console.log(' 我是box2, 被点了');
+        console.log(event.target);
+
+        if(event.target != this){
+            console.log("当前事件是通过冒泡产生触发的");
+            console.log( this);
+            console.log(event.target);
+            console.log('-----------------');
+        }
     }
 
-    box3.onclick = function () {
-        console.log(' 我是box3, 被点了');
+    box1.onclick = function () {
+        console.log(' 我是box1, 被点了');
+        console.log(event.target);
     }
 
     document.onclick = function () {
         console.log(' 我是 document, 被点了');
+//        console.log(event.target);
     }
 
 
 
-//box1.ondblclick = function () {
-//    console.log(' 我是box1, ondblclick被点了');
-//}
 
-//box2.ondblclick = function () {
-//    console.log(' 我是box2,ondblclick 被点了');
-//}
 
-//box3.ondblclick = function ondblclick() {
-//    console.log(' 我是box3, ondblclick被点了');
-//}
-//
-//document.ondblclick = function () {
-//    console.log(' 我是 document, ondblclick被点了');
-//}
+
+
+//    双击事件
+var box11 = document.getElementsByClassName('box11')[0] ;
+var box22 = document.getElementsByClassName('box22')[0] ;
+var box33 = document.getElementsByClassName('box33')[0] ;
+box11.ondblclick = function () {
+    console.log(' 我是box11, ondblclick被点了');
+}
+
+box22.ondblclick = function () {
+    console.log(' 我是box22,ondblclick 被点了');
+}
+
+box33.ondblclick = function ondblclick() {
+    console.log(' 我是box33, ondblclick被点了');
+}
+
+document.ondblclick = function () {
+    console.log(' 我是 document, ondblclick被点了');
+}
 
 </script>
 </body>
