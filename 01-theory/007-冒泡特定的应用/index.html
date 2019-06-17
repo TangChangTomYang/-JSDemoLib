@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件的捕获</title>
+</head>
+
+
+<style>
+    ul{
+        width: 200px;
+
+    }
+
+    li{
+        background-color: pink;
+    }
+</style>
+
+<body>
+
+<button> 点击插入新 li </button>
+
+<ul>
+    <li>我是native 1</li>
+    <li>我是native 2</li>
+    <li>我是native 3</li>
+    <li>我是native 4</li>
+    <li>我是native 5</li>
+</ul>
+
+
+</body>
+
+
+<script>
+
+    var liArr = document.getElementsByTagName('li');
+    var ul = document.getElementsByTagName('ul')[0];
+
+    function liClickFunc() {
+        console.log(this.innerText)
+        console.log((this.tagName));
+    }
+
+
+    for (var i = 0 ; i < liArr.length; i++){
+        var li = liArr[i];
+        li.onclick = liClickFunc;
+    }
+
+    var button = document.getElementsByTagName('button')[0];
+    button.onclick = function () {
+        console.log('---------点击新增');
+        var liCount = document.getElementsByTagName('li').length + 1;
+
+        var liEle = document.createElement('li');
+        liEle.innerText = '我 是新加入的li: ' + liCount;
+        liEle.onclick = liClickFunc;
+//        liEle.innerHTML =  '我 是新加入的li: ' + liCount;
+        ul.appendChild(liEle);
+     }
+
+
+
+//     普通的事件绑定方法, 无法给新增的元素绑定事件, 所以我们要使用冒泡的特定---事件委托
+
+
+    // 其实, 要给子元素添加点击事件, 我们只需要给父元素添加事件, 然后通过 冒泡特性过滤即可, 这种就避免了, 单个为子元素添加事件的繁琐工作
+
+
+</script>
+</html>
+
+
+
+<!--事件委托
+
+
+
+
+-->
