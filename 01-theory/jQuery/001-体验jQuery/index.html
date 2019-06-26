@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>体验jQuery</title>
+
+
+    <style>
+        div{
+            height: 100px;
+            background-color: pink;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+<button>显示或者隐藏</button>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+
+</body>
+</html>
+
+
+<!--jQuery 的使用, 第一步导入jQuery 的库文件-->
+<script src="jquery-1.11.1.js"></script>
+<!--第二步, 直接的script 标签内调用jQuery的库函数即可-->
+<script>
+
+    // 1. 获取 document
+    $(document).ready(function () {
+
+        //1. 获取元素
+        var btn = $('button'); // 直接通过标签名就可以获取对应的标签
+        var div = $('div');
+
+        // 绑定事件 (事件绑定是通过方法绑定的)
+        btn.click(function () {
+
+            // 事件驱动程序
+            div.show(1000); // 显示盒子, 1000 是动画时间
+            div.html("div 标签的内容");
+        });
+
+    });
+
+</script>
+
+
+
+<script>
+    /**
+     1. jQuery 是什么?
+
+        jQuery 是JS的一个库, 封装了我们开发过程中常用的一些功能, 方便我们来调用, 提高了我们的开发效率
+        Js 库是把我们常用的功能放到一个单独的文件中, 我们用的时候, 直接引用到页面来就可以了
+
+     2. 学习jQuery 主要学什么?
+        目前这个阶段主要学习如何使用jQuery开操作DOM, 其实就是学习jQuery 封装好的那些功能方法 (API)
+        这些API的共同特点, 几乎全是方法, 所以在使用jQuery的使用都是方法调用.
+
+     jQuery
+     官网: http://jquery.com
+     汉化: http://www.css88.com.jqapi-1.9
+     在线API: http:api.jquery.com
+
+
+     jQuery的选择/ 操作/ 事件/ 扩展
+
+
+
+      3. jQuery 的特点
+            (1) 链式编程
+            (2) 隐式迭代
+28:00
+
+     */
+
+</script>
