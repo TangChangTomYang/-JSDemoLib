@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<script>
+
+    /**
+     正则表达式:
+
+     一、正则表达式声明
+
+     1、通过构造函数定义
+        var 变量名 = new RegExp(/表达式/);
+
+     2、通过直接量定义 (较为常用)
+        var 变量名 = /表达式/;
+
+     3、正则表达式的组成 (总结)
+        由一些 普通字符和元字符组成, 普通字符就是字母和数字, 元字符就是具有特殊意义的字符
+
+     4、test() 方法
+        正则对象方法, 检测测试字符串是否符合该规定, 返回 true 和 false
+
+        语法:
+        Boolean rst = 表达式.test('要检验的内容');
+
+        eg: 验证 567 符不符合 \d 的规范
+        console.log(/\d/.test(567));
+
+
+     5、 预定义类
+        .  [^\n\r] 除了换行之外的任意字符 ("" 不行)
+        \d [0-9] 数字字符
+        \D [^0-9] 非数字字符
+        \s [\t\n\x0B\f\r] 空白字符
+        \S [^\t\n\x0B\f\r] 非空白字符
+        \w [a-zA-Z0-9] 单词字符
+
+
+     6、 简单类(正则: // 中什么特殊符号都不写, 和[]的加入)
+         (1)、 /string/.test("string")    必须是完整的, 只多不能少, 依据话, 只要包含andy 就行
+            /andy/.test("andy")        // true
+            /andy/.test("andylv")      // true
+            /andy/.test("an")          //false
+
+         (2)、 /[string]/.test("string")   只要包含里面的任何一个就可以
+            /[andy]/.test('andy')     // true
+            /[andy]/.test('an')       // true
+            /[andy]/.test('ady')      // true
+            /[andy]/.test('anll')     // true
+            /[andy]/.test('assd')      // true
+            /[andy]/.test('ss')        // false
+
+
+
+
+
+     */
+</script>

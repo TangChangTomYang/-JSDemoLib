@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a218540d-2254-41d6-aae2-20071cfd0f90" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/007-冒泡特定的应用/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/01-theory/007-事件捕获/index.html" afterPath="$PROJECT_DIR$/01-theory/008-getComputedStyle/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/009-透明度/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/010-正则表达式/reg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02-demo/014-缓动demo/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02-demo/JSTool" afterPath="$PROJECT_DIR$/02-demo/JSTool" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01-theory/006-冒泡/index.html" afterPath="$PROJECT_DIR$/01-theory/006-冒泡/index.html" />
     </list>
     <ignored path=" JSDemoLib.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,73 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/005-浏览器可视区域宽高/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="56" />
-              <folding>
-                <element signature="e#192#222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02-demo/009-client/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/006-冒泡/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02-demo/010-事件冒泡/001-隐藏模态窗口/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/关于定位的说明/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2176">
-              <caret line="136" column="10" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YRJsTool.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YRJsTool.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-demo/JSTool/YRJsTool.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+            <state relative-caret-position="109">
+              <caret line="304" column="3" selection-start-line="304" selection-start-column="3" selection-end-line="304" selection-end-column="3" />
               <folding>
                 <element signature="n#!!doc;n#getStyle#0" expanded="true" />
                 <element signature="n#!!doc;n#eventTarget#0" expanded="true" />
@@ -105,40 +43,114 @@
                 <element signature="n#!!doc;n#browserSize#0" expanded="true" />
                 <element signature="n#!!doc;n#touchPoint#0" expanded="true" />
                 <element signature="n#!!doc;n#pageOffset#0" expanded="true" />
-                <element signature="e#2810#2882#0" expanded="true" />
+                <element signature="e#2846#2918#0" expanded="true" />
                 <element signature="n#!!doc;n#animateMove_V_callback#0" expanded="true" />
-                <element signature="n#!!doc;n#animateMove#0" expanded="true" />
-                <element signature="e#5646#5716#0" expanded="true" />
+                <element signature="n#!!doc;n#animate#0" expanded="true" />
+                <element signature="e#6532#6602#0" expanded="true" />
+                <element signature="n#!!doc;n#getFirstChild#0" expanded="true" />
+                <element signature="n#!!doc;n#getLastChild#0" expanded="true" />
+                <element signature="n#!!doc;n#getNextSibling#0" expanded="true" />
+                <element signature="n#!!doc;n#getSiblingOfIndex#0" expanded="true" />
+                <element signature="n#!!doc;n#getAllSiblings#0" expanded="true" />
+                <element signature="n#!!doc;n#getChildren#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/007-冒泡特定的应用/index.html">
+        <entry file="file://$PROJECT_DIR$/01-theory/关于定位的说明/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="2072">
+              <caret line="136" column="10" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reg.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01-theory/010-正则表达式/reg.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/008-getComputedStyle/index.html">
+        <entry file="file://$PROJECT_DIR$/02-demo/014-缓动demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="582">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02-demo/011-鼠标在盒子中的位置/index.html">
+        <entry file="file://$PROJECT_DIR$/01-theory/009-透明度/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="42" column="5" selection-start-line="39" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="192">
+              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding>
+                <element signature="e#1034#1226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery1.0.0.1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/js/jquery1.0.0.1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="79" column="1" selection-start-line="20" selection-start-column="0" selection-end-line="79" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc;n#show#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/js/js.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1672">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/json.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -192,7 +204,13 @@
         <option value="$PROJECT_DIR$/01-theory/007-事件捕获/index.html" />
         <option value="$PROJECT_DIR$/01-theory/007-冒泡特定的应用/index.html" />
         <option value="$PROJECT_DIR$/01-theory/008-getComputedStyle/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/009-透明度/index.html" />
+        <option value="$PROJECT_DIR$/02-demo/013-旋转木马/index.html" />
+        <option value="$PROJECT_DIR$/02-demo/013-旋转轮播图/demo.html" />
+        <option value="$PROJECT_DIR$/02-demo/013-旋转轮播图/js/jquery1.0.0.1.js" />
+        <option value="$PROJECT_DIR$/02-demo/014-缓动demo/index.html" />
         <option value="$PROJECT_DIR$/02-demo/JSTool/YRJsTool.js" />
+        <option value="$PROJECT_DIR$/01-theory/010-正则表达式/reg.html" />
       </list>
     </option>
   </component>
@@ -203,7 +221,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="628" />
+    <option name="x" value="627" />
     <option name="y" value="23" />
     <option name="width" value="1154" />
     <option name="height" value="1008" />
@@ -234,7 +252,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,22 +301,8 @@
               <option name="myItemId" value="02-demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JSDemoLib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JSDemoLib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="02-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="010-事件冒泡" />
+              <option name="myItemId" value="014-缓动demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,11 +320,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="010-事件冒泡" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="001-隐藏模态窗口" />
+              <option name="myItemId" value="013-旋转轮播图" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,10 +335,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="02-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="009-client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,12 +366,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="008-getComputedStyle" />
+              <option name="myItemId" value="010-正则表达式" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,6 +383,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/yangrui/Desktop/JSDemoLib/02-demo/JSTool/YRJsTool.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -483,15 +480,18 @@
       <workItem from="1558923797700" duration="18086000" />
       <workItem from="1559005263790" duration="594000" />
       <workItem from="1560494442489" duration="7268000" />
-      <workItem from="1560732798134" duration="7609000" />
+      <workItem from="1560732798134" duration="7681000" />
+      <workItem from="1560920928005" duration="4024000" />
+      <workItem from="1561077996524" duration="22000" />
+      <workItem from="1561516358480" duration="4626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104743000" />
+    <option name="totallyTimeSpent" value="113487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="628" y="23" width="1154" height="1008" extended-state="0" />
+    <frame x="627" y="23" width="1154" height="1008" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22594881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -556,21 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/004-两侧广告跟随/index.html" />
-    <entry file="file://$PROJECT_DIR$/005-滑动焦点图/index.html" />
-    <entry file="file://$PROJECT_DIR$/006-左右焦点图/index.html" />
-    <entry file="file://$PROJECT_DIR$/007-定时无缝轮播图/index.html" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7936">
-          <caret line="1189" column="0" selection-start-line="1189" selection-start-column="0" selection-end-line="1189" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSTool/YRJsTool.js" />
-    <entry file="file://$PROJECT_DIR$/001-轮播图/index.html" />
-    <entry file="file://$PROJECT_DIR$/002-楼层跳跃/index.html" />
-    <entry file="file://$PROJECT_DIR$/003-滚动导航条/index.html" />
     <entry file="file://$PROJECT_DIR$/JSTool/YRJsTool.js" />
     <entry file="file://$PROJECT_DIR$/004-两侧广告跟随/index.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
@@ -670,10 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding>
-            <element signature="e#131#182#0" expanded="true" />
-            <element signature="e#694#727#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -681,15 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="42" column="5" selection-start-line="39" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-theory/关于定位的说明/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="136" column="10" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,9 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="56" />
-          <folding>
-            <element signature="e#192#222#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +689,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-theory/006-冒泡/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="2368">
           <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
           <folding />
         </state>
@@ -729,7 +697,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-theory/007-冒泡特定的应用/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
+        <state relative-caret-position="1104">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
@@ -751,10 +719,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/013-旋转木马/index.html" />
+    <entry file="file://$PROJECT_DIR$/01-theory/009-透明度/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/js/jquery1.0.0.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="79" column="1" selection-start-line="20" selection-start-column="0" selection-end-line="79" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#show#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1672">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#1034#1226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/js/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/013-旋转轮播图/json.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/014-缓动demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02-demo/JSTool/YRJsTool.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+        <state relative-caret-position="109">
+          <caret line="304" column="3" selection-start-line="304" selection-start-column="3" selection-end-line="304" selection-end-column="3" />
           <folding>
             <element signature="n#!!doc;n#getStyle#0" expanded="true" />
             <element signature="n#!!doc;n#eventTarget#0" expanded="true" />
@@ -764,11 +797,33 @@
             <element signature="n#!!doc;n#browserSize#0" expanded="true" />
             <element signature="n#!!doc;n#touchPoint#0" expanded="true" />
             <element signature="n#!!doc;n#pageOffset#0" expanded="true" />
-            <element signature="e#2810#2882#0" expanded="true" />
+            <element signature="e#2846#2918#0" expanded="true" />
             <element signature="n#!!doc;n#animateMove_V_callback#0" expanded="true" />
-            <element signature="n#!!doc;n#animateMove#0" expanded="true" />
-            <element signature="e#5646#5716#0" expanded="true" />
+            <element signature="n#!!doc;n#animate#0" expanded="true" />
+            <element signature="e#6532#6602#0" expanded="true" />
+            <element signature="n#!!doc;n#getFirstChild#0" expanded="true" />
+            <element signature="n#!!doc;n#getLastChild#0" expanded="true" />
+            <element signature="n#!!doc;n#getNextSibling#0" expanded="true" />
+            <element signature="n#!!doc;n#getSiblingOfIndex#0" expanded="true" />
+            <element signature="n#!!doc;n#getAllSiblings#0" expanded="true" />
+            <element signature="n#!!doc;n#getChildren#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/关于定位的说明/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2072">
+          <caret line="136" column="10" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/010-正则表达式/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
