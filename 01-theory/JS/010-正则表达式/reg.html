@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<script>
+
+    /**
+     正则表达式:
+
+     一、正则表达式声明
+
+     1、通过构造函数定义
+        var 变量名 = new RegExp(/表达式/);
+
+     2、通过直接量定义 (较为常用)
+        var 变量名 = /表达式/;
+
+     3、正则表达式的组成 (总结)
+        由一些 普通字符和元字符组成, 普通字符就是字母和数字, 元字符就是具有特殊意义的字符
+
+     4、test() 方法
+        正则对象方法, 检测测试字符串是否符合该规定, 返回 true 和 false
+
+        语法:
+        Boolean rst = 表达式.test('要检验的内容');
+
+        eg: 验证 567 符不符合 \d 的规范
+        console.log(/\d/.test(567));
+
+
+     5、 预定义类
+        .  [^\n\r] 除了换行和回车之外的任意字符 ("" 不行)
+        \d [0-9] 数字字符
+        \D [^0-9] 非数字字符
+        \s [\t\n\x0B\f\r] 空白字符
+        \S [^\t\n\x0B\f\r] 非空白字符
+        \w [a-zA-Z0-9] 单词字符
+        \W [^a-zA-Z0-9] 非单词字符
+
+     5.1、 特殊字符
+        \t   制表符
+        \n   换行符
+        \r   回车符
+        \f   换页符
+        \b   与回退字符
+        \v   垂直制表符
+        \0   空字符
+
+
+
+
+     6、 简单类(正则: // 中什么特殊符号都不写, 和[]的加入)
+         (1)、 /string/.test("string")    必须是完整的, 只多不能少, 依据话, 只要包含andy 就行
+            /andy/.test("andy")        // true
+            /andy/.test("andylv")      // true
+            /andy/.test("an")          //false
+
+         (2)、 /[string]/.test("string")   只要包含里面的任何一个就可以  [] 表示其中一个
+            /[andy]/.test('andy')     // true
+            /[andy]/.test('an')       // true
+            /[andy]/.test('ady')      // true
+            /[andy]/.test('anll')     // true
+            /[andy]/.test('assd')      // true
+            /[andy]/.test('ss')        // false
+
+     7、 负向类 (不能是其中的整体或者一部分)
+        中括号内, 前面加个元字符 ^ 进行取反, 不是括号里面的字符(一部分也不行)
+        (可以不够, 但是不能多)
+        (不够和正好, 返回false, 多了或者没有返回true)
+        console.log(/[^abc]/.test('a'));
+        console.log(/[^abc]/.test('gg'));
+
+        注意: 这个符号 ^  一定写在括号里面
+
+     8、范围类
+        有时匹配的东西过多, 而类型又相同, 全部输入太麻烦, 我们就可以在中间加个 横线 -
+        console.log(/[a-z]/.test('a'));
+        console.log(/[A-Z]/.test('A'));
+
+     9、组合类
+        用中括号匹配不同类型的单个字符
+        console.log(/[a-m1-5]/.test('b'));
+
+     10、正则边界 (重点)
+        ^ 会匹配行或者字符串的起始位置
+
+        注意: ^ 只有在[] 中才表示非!, 这里表示开始
+
+        $ 会匹配行或者字符串的结尾位置
+        ^$ 在一起, 表示必须是这个 (精准匹配)
+
+        eg:
+        console.log(/lily/.test('lilyname')); // true
+        console.log(/^lily$/.test('lily')); // true
+        console.log(/^lily$/.test('ly'));  //false
+        console.log(/^andy$/.test('andy')); // true
+
+        这个的最终意思是说: 必须是 'andy' 这4个字母
+
+
+     11、 量词 (重点)   * + ? {}
+        (多个字母, 重复最后一个)
+
+        * 贪婪 重复0次或更多, (>=0)
+        + 懒惰 重复一次或更多, (>=1)
+        ? 占有 重复0次或一次, (0||1) 要么有要么1次
+        {n} 重复n次的意思, 可以有n个 (=n)  console.log(/[0-6]{6}/.test('123456')); 表示必须是6位数字
+        {n,} 表示至少重复n次, (>=n)
+        {n,m} 重复出现的次数, (n<=x<=m)
+
+        * 相当于 {0,}
+        + 相当于 {1,}
+        ? 相当于 {0,1}
+
+
+        | 表示或者, eg a|b 表示要么a 要么b 要么ab
+        eg:
+        console.log(/^abc$|^xyz$/.test('abc'));  true  // 表示满足前面一个 ^abc$ 或者 后一个 ^xyz$ 都可以
+        console.log(/(abc)|(xyz)/.test('abxy')); false  // 表示要么是abc 要么是xyz
+
+
+
+
+
+     12、案例
+
+        (1)匹配 座机号:
+        var reg = /^(0\d{2}-\d{8})|(0\d{3}-\d{7})$/;
+        var reg2 = /^(0\d{2}-\d{8})$|^(0\d{3}-\d{7})$/;
+
+        (2)匹配中文
+
+
+
+
+
+
+
+     */
+</script>

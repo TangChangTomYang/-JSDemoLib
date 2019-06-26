@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对输入的文字进行正则判断</title>
+
+</head>
+<body>
+
+<input type="text">
+<span>请输入你的电话号码: 87654321</span>
+
+</body>
+
+<script>
+
+
+//    当输入框失去焦点时触发
+    var input = document.getElementsByTagName('input')[0];
+//    当输入框 失去焦点时就会触发
+    input.onblur = function () {
+        console.log('-------输入框 失去焦点了');
+        if (/^\d{8}$/.test(this.value)){
+            console.log('输入正确');
+        }
+        else {
+            console.log('输入错误');
+        }
+
+
+    }
+
+//var body = document.getElementsByTagName('body')[0];
+////当用户 敲击了 回车键就会来到这里
+//body.onkeydown = function () {
+//        console.log('用户敲击了回车键');
+//    }
+</script>
+
+</html>

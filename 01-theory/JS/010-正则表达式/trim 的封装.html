@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trim的封装</title>
+
+
+
+</head>
+<body>
+
+</body>
+
+<script>
+
+    function trim(str) {
+//        (^\s+) 表示匹配空格开头的多个空格, (\s+$) 表示匹配过个空格的结尾
+        var rst = str.replace(/(^\s+)|(\s+$)/g,"");
+        return rst ;
+    }
+
+</script>
+
+</html>
