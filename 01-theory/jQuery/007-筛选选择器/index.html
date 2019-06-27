@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>筛选选择器</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+
+        $(function () {
+            // find(selector) 查找指定元素的所有后代元素
+            // 格式: jQuery对象.find(选择器);
+            var jqUl = $('ul:eq(1)');   // 查找第一个 ul
+            var jqul_li = jqUl.find('li');  // 查找 jqul 中的所有li
+            jqul_li.css('background', 'red');
+            var span = jqUl.find('span');
+            span.css('background', 'green');
+
+
+            //children() 查找指定元素的直接子元素, 只要是儿子都是
+            var child = jqUl.children();  // 没有参数表示所有的子元素
+            child.css('background', 'orange');
+
+            var childol = jqUl.children('ol'); // 获取指定类型的子元素
+            childol.css('background', 'pink');
+
+            // jqUl[0] 获取的是JS 的DOM  对象
+            var child2nd = jqUl.children().eq(2); // 获取第2个子元素, 获取到的是 jquery 的对象
+            child2nd.css('background', 'red');
+
+
+            // next()  用于获取,当前元素的下一个兄弟元素
+            var next =  child2nd = jqUl.children().eq(2).next();
+            next.css('background', 'purple');
+
+
+            // siblings() 查找所有兄弟元素 (不包括自己)
+            var sibling = jqUl.siblings();
+            sibling.css('background', 'green');
+
+            // parent() 查找父元素
+            var parent = jqUl.parent();
+            parent.css('background', 'green');
+
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+<ul>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+</ul>
+
+
+<ul>
+    <li> 成都市郫都区</li>
+    <li class="box"> 成都市郫都区</li>
+    <span> 成都市郫都区</span>
+    <li> 成都市郫都区</li>
+    <li id="abc"> 成都市郫都区</li>
+    <li> 成都市郫都区</li>
+    <a href="http://www.baidu.com"> 成都市郫都区</a><br>
+    <a href="#"> 成都市郫都区</a>
+    <ol>
+        <li>subsubsub</li>
+        <li>subsubsub</li>
+        <li>subsubsub</li>
+        <li>subsubsub</li>
+    </ol>
+</ul>
+
+<div>wo shi div</div>
+
+
+</body>
+</html>

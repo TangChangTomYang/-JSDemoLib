@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+
+    <script>
+
+        // 入口函数
+        $(function () {
+            // 层级选择器
+            var all_li = $('ul li'); // 后代选择器, 选择所有的后代
+            all_li.css('background', 'red');
+            all_li.css('margin',10);
+
+            // 直接后代选择器
+            var childLi = $('ul>li');
+            childLi.css('background','yellow');
+
+
+            // 后代选择器+奇数选择器
+            var jiShuLi = $('ul li:odd');
+            jiShuLi.css('background','green');
+
+
+            // 后代 中的偶数选择器
+            var ouShuLi = $('ul li:even');
+            ouShuLi.css('background', 'brown');
+
+            // 索引值 选择器, 第几个
+            var firLi = $('ul li:eq(3)');
+            firLi.css('background', 'orange');
+
+
+
+            // 最后一个选择器
+            var lastIndex  = $('ul li').length - 1;
+            var lastLi = $('ul li:eq('+lastIndex+')');
+            lastLi.css('background', 'red');
+
+        });
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+
+<ul>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+    <ol>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+    </ol>
+
+</ul>
+
+
+</body>
+</html>

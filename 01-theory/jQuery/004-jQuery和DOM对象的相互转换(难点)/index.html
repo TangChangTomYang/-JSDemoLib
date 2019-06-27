@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery和DOM对象的相互转换</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        /**
+         jQuery 中的DOM 对象和 JS 中的DOM对象的区别和联系
+
+
+         */
+
+
+        $(document).ready(function () {
+
+            var div = document.getElementsByTagName('div');
+            var box = document.getElementsByClassName('box');
+            var jqdiv = $('div');
+            var jqbox = $('.box');
+
+
+            console.log(div);
+            console.log(box);
+
+            console.log(jqbox);
+            console.log(jqdiv);
+
+
+            // 经过打印发现 通过原生JS 获取的DOM对象和 通过jQuery获取的DOM 对象是不一样的
+
+            //1. 将原生 JS 获取的DOM 对象 转换为 jQuery DOM 对象
+            div = $(div);
+            box = $(box); // 这样就将JS 原生的DOM对像转换成了 jQuery 的DOM对象了
+
+//            jQuery DOM 对象转换成JS 原生DOM 对象
+            jqdiv = jqdiv[0];
+        })
+
+
+    </script>
+</head>
+<body>
+
+
+    <div></div>
+    <div class="box"></div>
+
+</body>
+</html>

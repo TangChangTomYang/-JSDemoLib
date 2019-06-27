@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery的符号$</title>
+
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        /**
+
+         一. jQuery的符号 $ (重点)
+
+            js 命名规范允许出现的字符有: 字母, 数字,下划线 和 $
+            js 中变量只能以 字母, 下划线 和 $ 开头, 不能以数字开头
+
+            在jQuery 中, $ 和 jQuery 是等价的
+
+         二. 怎么理解jQuery 中的 $ 符号
+            $ 实际上表示的是一个函数, 就是一个函数名而已
+
+         */
+
+
+
+        console.log($);
+        console.log(jQuery);
+        console.log($===jQuery);
+        // 在jQuery 中, $ 和 jQuery 完全等价, 因此 $(document).ready(function () {  }) 和 jQuery(document).ready(function () {  }) 完全等价, 都可以用来调用函数
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

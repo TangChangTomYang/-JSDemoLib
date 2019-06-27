@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery基本选择器</title>
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        // jQuery 基本选择器
+        // 三种方法获取jQuery 对象, 然后用css方法操作
+
+
+        // 第一步, 使用入口函数
+        $(document).ready(function () {
+
+            // 通过标签名获取
+            var jqDiv = $('div'); // 获取所有的div
+            jqDiv.css('width',100);
+            jqDiv.css('height',100);
+            jqDiv.css('background', 'pink');
+            jqDiv.css('margin',30);
+
+            // 通过id 名获取
+            var jqIdBox = $('#box');
+            jqIdBox.css('background', 'blue');
+
+
+            // 通过该类名获取
+            var jqcBox = $('.box');
+            jqcBox.css('background', 'yellow');
+        })
+
+
+    </script>
+
+</head>
+<body>
+
+    <div></div>
+    <div class="box"></div>
+    <div id="box"></div>
+
+</body>
+</html>
