@@ -2,17 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a218540d-2254-41d6-aae2-20071cfd0f90" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/002-jQuery入口函数/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/003-jQuery的$符号/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/004-jQuery和DOM对象的相互转换(难点)/demo1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/004-jQuery和DOM对象的相互转换(难点)/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/005-jQuery 基本选择器/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/006-层级选择器/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/007-筛选选择器/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery/jquery-1.11.1.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/libg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/getIndex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/009-获取自己的索引(有坑)/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/001-jQuery样式属性操作.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/002-jQuery类操作.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/003-jQuery显示隐藏操作.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/004-jQuery滑入滑出(卷帘门).html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/005-jQuery淡入淡出.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/006-jQuery自定义动画.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/007-jQuery 停止动画.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/001-动态创建元素.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/002-jQuery添加元素.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/003-jQuery html() 方法.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/004-jQuery 清空元素.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/005-jQuery 复制元素.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01-theory/jQuery/012-jQuery 操作 form 表单/001-jQuery 操作form 表单.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02-demo/jQuery/001-下拉菜单.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02-demo/JS/JSTool" afterPath="$PROJECT_DIR$/02-demo/JS/JSTool" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery/index.html" afterPath="$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery/index.html" />
     </list>
     <ignored path=" JSDemoLib.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,87 +45,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery/index.html">
+      <file leaf-file-name="002-jQuery添加元素.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/002-jQuery添加元素.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            <state relative-caret-position="262">
+              <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
               <folding>
-                <element signature="e#897#1775#0" expanded="true" />
+                <element signature="e#167#758#0" expanded="true" />
+                <element signature="e#3840#4019#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/002-jQuery入口函数/index.html">
+      <file leaf-file-name="003-jQuery html() 方法.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/003-jQuery html() 方法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+            <state relative-caret-position="224">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="004-jQuery 清空元素.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/004-jQuery 清空元素.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="005-jQuery 复制元素.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/005-jQuery 复制元素.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="40" selection-end-column="15" />
               <folding>
-                <element signature="e#192#1318#0" expanded="true" />
+                <element signature="e#169#284#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/003-jQuery的$符号/index.html">
+      <file leaf-file-name="001-jQuery 操作form 表单.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/012-jQuery 操作 form 表单/001-jQuery 操作form 表单.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="112">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/004-jQuery和DOM对象的相互转换(难点)/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding>
-                <element signature="e#175#235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/004-jQuery和DOM对象的相互转换(难点)/demo1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/005-jQuery 基本选择器/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/006-层级选择器/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01-theory/jQuery/007-筛选选择器/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+            <state relative-caret-position="321">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="001-动态创建元素.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/001-动态创建元素.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#170#516#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-1.11.1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-theory/jQuery/jquery-1.11.1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="5830" column="76" selection-start-line="5830" selection-start-column="76" selection-end-line="5830" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -137,26 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/001-轮播图/index.html" />
-        <option value="$PROJECT_DIR$/006-左右焦点图/index.html" />
-        <option value="$PROJECT_DIR$/007-定时无缝轮播图/index.html" />
-        <option value="$PROJECT_DIR$/008-Event/index.html" />
-        <option value="$PROJECT_DIR$/008-Event对象/001-放大境/index.html" />
-        <option value="$PROJECT_DIR$/008-Event对象/002-移动窗口/index.html" />
-        <option value="$PROJECT_DIR$/008-Event对象/003-滚动条/index.html" />
-        <option value="$PROJECT_DIR$/009-client/index.html" />
-        <option value="$PROJECT_DIR$/010-事件冒泡/index.html" />
-        <option value="$PROJECT_DIR$/010-事件冒泡/index2.html" />
-        <option value="$PROJECT_DIR$/010-事件冒泡/001-隐藏模态窗口/index.html" />
-        <option value="$PROJECT_DIR$/003-滚动导航条/index.html" />
-        <option value="$PROJECT_DIR$/004-两侧广告跟随/index.html" />
-        <option value="$PROJECT_DIR$/002-楼层跳跃/index.html" />
-        <option value="$PROJECT_DIR$/005-滑动焦点图/index.html" />
-        <option value="$PROJECT_DIR$/JSTool/YRJsTool.js" />
-        <option value="$PROJECT_DIR$/01-theory/001-Offset家族/001-offset家族介绍.html" />
-        <option value="$PROJECT_DIR$/02-demo/002-楼层跳跃/index.html" />
-        <option value="$PROJECT_DIR$/01-theory/002-Scroll家族/001-scroll家族介绍.html" />
-        <option value="$PROJECT_DIR$/01-theory/004-事件对象Event/001-event 对象.html" />
         <option value="$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.html" />
         <option value="$PROJECT_DIR$/02-demo/011-鼠标在盒子中的位置/index.html" />
         <option value="$PROJECT_DIR$/02-demo/012-模拟滚动条/index.html" />
@@ -187,6 +178,27 @@
         <option value="$PROJECT_DIR$/01-theory/jQuery/005-jQuery 基本选择器/index.html" />
         <option value="$PROJECT_DIR$/01-theory/jQuery/006-层级选择器/index.html" />
         <option value="$PROJECT_DIR$/01-theory/jQuery/007-筛选选择器/index.html" />
+        <option value="$PROJECT_DIR$/02-demo/jQuery/001-下拉菜单.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/getIndex.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/009-获取自己的索引/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/009-获取自己的索引(有坑)/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQueryDOM操作/001-样式和类操作/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/index02.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/index.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/001-jQuery样式属性操作.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/003-jQuery显示隐藏操作.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/004-jQuery滑入滑出.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/004-jQuery滑入滑出(卷帘门).html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/005-jQuery淡入淡出.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/006-jQuery自定义动画.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/007-jQuery 停止动画.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/001-动态创建元素.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/003-jQuery html() 方法.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/002-jQuery添加元素.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/004-jQuery 清空元素.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/005-jQuery 复制元素.html" />
+        <option value="$PROJECT_DIR$/01-theory/jQuery/012-jQuery 操作 form 表单/001-jQuery 操作form 表单.html" />
       </list>
     </option>
   </component>
@@ -197,9 +209,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="630" />
-    <option name="y" value="42" />
-    <option name="width" value="1154" />
+    <option name="x" value="342" />
+    <option name="y" value="23" />
+    <option name="width" value="1129" />
     <option name="height" value="1008" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -227,8 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,20 +267,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="02-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JSDemoLib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JSDemoLib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="01-theory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -311,12 +307,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="007-筛选选择器" />
+              <option name="myItemId" value="012-jQuery 操作 form 表单" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,11 +329,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单" />
       <recent name="$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery" />
       <recent name="$PROJECT_DIR$/02-demo/012-模拟滚动条" />
       <recent name="$PROJECT_DIR$/01-theory/004-事件对象Event" />
       <recent name="$PROJECT_DIR$/008-Event对象/001-放大境/images" />
-      <recent name="$PROJECT_DIR$/005-滑动焦点图/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -430,18 +428,22 @@
       <workItem from="1561516358480" duration="5116000" />
       <workItem from="1561526941554" duration="7214000" />
       <workItem from="1561542768953" duration="661000" />
-      <workItem from="1561614700793" duration="10104000" />
+      <workItem from="1561614700793" duration="10605000" />
+      <workItem from="1561686337045" duration="17002000" />
+      <workItem from="1561942208061" duration="6663000" />
+      <workItem from="1562039275683" duration="7084000" />
+      <workItem from="1562117253266" duration="7024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131956000" />
+    <option name="totallyTimeSpent" value="170230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="630" y="42" width="1154" height="1008" extended-state="0" />
+    <frame x="342" y="23" width="1129" height="1008" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3654016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.299639" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -455,9 +457,27 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31588447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -503,25 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/004-两侧广告跟随/index.html" />
-    <entry file="file://$PROJECT_DIR$/005-滑动焦点图/index.html" />
-    <entry file="file://$PROJECT_DIR$/006-左右焦点图/index.html" />
-    <entry file="file://$PROJECT_DIR$/007-定时无缝轮播图/index.html" />
-    <entry file="file://$PROJECT_DIR$/009-client/index.html" />
-    <entry file="file://$PROJECT_DIR$/008-Event对象/002-移动窗口/index.html" />
-    <entry file="file://$PROJECT_DIR$/008-Event对象/001-放大境/index.html" />
-    <entry file="file://$PROJECT_DIR$/JSTool/YRJsTool.js" />
-    <entry file="file://$PROJECT_DIR$/010-事件冒泡/001-隐藏模态窗口/index.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/002-Scroll家族/002-屏幕滚动.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/001-Offset家族/001-offset家族介绍.html" />
-    <entry file="file://$PROJECT_DIR$/02-demo/002-楼层跳跃/index.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/002-Scroll家族/001-scroll家族介绍.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.png" />
-    <entry file="file://$PROJECT_DIR$/02-demo/012-模拟滚动条/index.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/001-event 对象.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/004-事件对象Event/pageYClientYScreenY.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/005-事件委托/index.html" />
-    <entry file="file://$PROJECT_DIR$/01-theory/003-client家族/index.html" />
     <entry file="file://$PROJECT_DIR$/02-demo/011-鼠标在盒子中的位置/index.html" />
     <entry file="file://$PROJECT_DIR$/01-theory/005-浏览器可视区域宽高/index.html" />
     <entry file="file://$PROJECT_DIR$/02-demo/009-client/index.html" />
@@ -558,31 +559,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery/jquery-1.11.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery/jquery-1.11.1.js" />
     <entry file="file://$PROJECT_DIR$/01-theory/jQuery/001-体验jQuery/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
+        <state relative-caret-position="592">
           <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding>
-            <element signature="e#897#1775#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-theory/jQuery/002-jQuery入口函数/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
+        <state relative-caret-position="256">
           <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-          <folding>
-            <element signature="e#192#1318#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,17 +578,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-theory/jQuery/004-jQuery和DOM对象的相互转换(难点)/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="224">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding>
-            <element signature="e#175#235#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -608,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,14 +606,182 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-demo/jQuery/001-下拉菜单.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="n#li#1;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#li#1;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/008-下拉菜单/getIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQueryDOM操作/001-样式和类操作/index.html" />
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/001-jQuery样式属性操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/005-jQuery淡入淡出.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="e#168#291#0" expanded="false" />
+            <element signature="e#302#598#0" expanded="false" />
+            <element signature="e#608#857#0" expanded="false" />
+            <element signature="e#867#1108#0" expanded="false" />
+            <element signature="e#1119#1398#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/007-jQuery 停止动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding>
+            <element signature="e#210#1229#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/006-jQuery自定义动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/004-jQuery滑入滑出(卷帘门).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="e#260#548#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/003-jQuery显示隐藏操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+          <folding>
+            <element signature="e#179#377#0" expanded="false" />
+            <element signature="e#484#1155#0" expanded="false" />
+            <element signature="e#1221#1666#0" expanded="false" />
+            <element signature="e#1744#2335#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/009-获取自己的索引(有坑)/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/010-jQuery 样式和类操作/002-jQuery类操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/jquery-1.11.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="5830" column="76" selection-start-line="5830" selection-start-column="76" selection-end-line="5830" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/001-动态创建元素.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#170#516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/003-jQuery html() 方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/002-jQuery添加元素.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+          <folding>
+            <element signature="e#167#758#0" expanded="true" />
+            <element signature="e#3840#4019#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01-theory/jQuery/007-筛选选择器/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+        <state relative-caret-position="321">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/004-jQuery 清空元素.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/011-jQuery节点操作/005-jQuery 复制元素.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="40" selection-end-column="15" />
+          <folding>
+            <element signature="e#169#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-theory/jQuery/012-jQuery 操作 form 表单/001-jQuery 操作form 表单.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>

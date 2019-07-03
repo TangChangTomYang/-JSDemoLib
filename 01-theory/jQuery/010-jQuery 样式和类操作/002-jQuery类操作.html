@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery类操作</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+
+            // 通过类名,给标签元素添加类
+            var div = $('div');
+
+            div.click(function () {
+
+                // 通过类名给指定的 jQuery 对象添加 CSS 类
+//                $(this).addClass('redCls');
+
+                // 移除指定名称的类
+//                $(this).removeClass('redCls');
+
+                // 不填参数,表示移除指定标签的所有类
+//                $(this).removeClass();
+
+                // 判断 指定元素 有没有包含 指定名字的类
+//                console.log($(this).hasClass('redCls'));
+
+
+                // toggleClass('类名'), 切换标签的类名, 有就删除类, 没有就移除类
+                $(this).toggleClass('redCls');
+
+            });
+
+        });
+    </script>
+
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+
+        }
+
+        .redCls{
+            background-color: red;
+        }
+
+        .blueCls{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--<div class="redCls blueCls"></div>-->
+<div></div>
+
+</body>
+</html>

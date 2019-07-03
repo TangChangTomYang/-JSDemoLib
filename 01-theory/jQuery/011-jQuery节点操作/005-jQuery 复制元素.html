@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 复制元素</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        /**
+          所匹配到的元素
+         $(selector).clone();
+
+
+         注意: 在jQuery 中 clone() 就表示的是 深复制, 没有浅复制
+
+
+         */
+
+        $(function () {
+            var div = $('div');
+
+            var ul = $('div ul');
+            var btn = $('button');
+
+            btn.eq(0).click(function () {
+
+                //
+                var cloneUl = ul.clone();
+                div.append(cloneUl);
+            });
+
+            btn.eq(1).click(function () {
+                var ul_2 = $('div ul');
+                var cloneUl_2 = ul_2.clone();
+                div.append(cloneUl_2);
+            });
+
+            btn.eq(2).click(function () {
+                 ul.children().eq(0).remove();
+            });
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+<button> 点击复制 节点</button>
+
+<button> 点击复制 指数级 复制 节点</button>
+<button> 点击 删除节点 </button>
+
+
+<div class="box">
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+</div>
+
+
+</body>
+</html>

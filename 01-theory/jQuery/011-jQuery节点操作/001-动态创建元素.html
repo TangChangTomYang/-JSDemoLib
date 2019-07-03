@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> jQuery动态创建元素</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        /**
+         1. 创建jQueryNode
+            1>   $() 函数的另一个作用, 动态创建元素
+                 如: var $spanNode = $("<span> 我是一个span元素</span>");
+                 相当于是 原生JS 中的 document.createElement("div"); 方法, 是新创建一个全新的
+
+            2> var node = $("#box").html("<li>我是li标签</li>");
+             注意: 通过jQuery 方法创建出来的元素, 也是jQuery对象, 不是原生的JS  DOM对象
+         */
+
+
+        $( function () {
+
+            var div = $('div');
+
+            var btn = $('button');
+            btn.parent().children().eq(0).click(function () {
+                // 创建一个全新的 node
+                // 类似于原生 JS 中的 document.createElement('li');
+                var jqNode =  $('<li> 我 是jQuery 中创建的 全新 li</li>');
+                div.append(jqNode);
+            });
+
+
+            btn.parent().children().eq(1).click(function () {
+                // 相当于是 原生 JS中的 div.innerHTML
+                var node = div.html("<li> 我 是jQuery 中创 html li</li>");
+                console.log(node);
+            });
+
+        });
+
+
+    </script>
+
+
+    <style>
+        div{
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+
+<button> 点击创建 一个全新的 node </button>
+<button> 点击创建一个 innerHTML node</button>
+    <div> 我是div
+            <li> 我是 origin li </li>
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery样式属性操作</title>
+    <script src="../jquery-1.11.1.js" ></script>
+    <script>
+
+        // jQuery 样式操作(设置属性)
+        $(function () {
+
+            var div = $('div');
+            // 方式1:  jQuery对象.css(json);
+            div.css({'width':200, 'height':100, 'background':'red'});
+
+            // 方式2: jQuery对象.css(属性名, 属性值);
+            div.css('background', 'purple');
+
+            // 方式3: 获取属性, 如果jQuery对象中有多个相同DOM 对象, 获取到的属性值为第一个DOM 对象的属性值
+            console.log(div.css('width'));
+
+        });
+
+    </script>
+</head>
+<body>
+
+    <div></div>
+</body>
+</html>

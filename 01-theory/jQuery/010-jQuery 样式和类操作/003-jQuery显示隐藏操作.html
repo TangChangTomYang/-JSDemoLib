@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 显示和隐藏操作</title>
+
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+
+
+            /**
+             动画:
+             隐藏动画效果
+             展示动画效果
+             淡入动画效果
+             淡出动画效果
+             滑出动画效果
+             滑入动画效果
+             改变透明度效果
+             自动义动画效果
+             */
+
+
+
+
+
+
+            // show() hide() (有动画时,Block标签都是从左上角开始放大缩小, 而 inline 和inline-block 是从左小角开始)
+            /**
+             1. show() 方法, 让匹配的元素显示出来
+
+                方式一: 参数为数字, 可以没有
+                jQuery对象.show(时长);  时长单位为 毫秒, 1秒=1000毫秒
+                var div = $('div');
+                div.show(200);
+
+                方式二: 参数为 字符串, slow/ normal/ fast
+                div.show('slow'); div.show('normal'); div.show('fast');   slow=600 normal=400 fast=200
+
+                方式三:  参数1表示速度,可以是数字或者字符串. 参数2是show方法执行完成后的回调函数
+                function done(){
+                    console.log('jQuery show 方法执行完毕');
+                }
+                div.show('slow', done);   当动画执行完毕后会调动done 方法
+
+
+                方式四: show() 方法不带参数,相当于 css('display', 'block') 没有动画效果
+
+             */
+
+
+
+            //当标签 hide 后, 标签的display 属性都会被修改为none
+            /**
+             1. hide() 方法, 让匹配元素隐藏起来, 使用方法和 show() 一致
+                方式一:
+                var div = $('div');
+                div.hide(200);
+
+                方式二:
+                div.hide('fast');
+
+                方式三:
+                function callback(){
+                    console.log(' hide 方法 执行完毕');
+                }
+                div.hide(200, callback);
+
+
+                方式四:
+                div.hide();  没有动画效果
+
+             */
+
+
+            // show() hide() 方法 是通过元素的宽高及透明度和display来显示和隐藏元素
+
+
+            /**
+             在jQuery 中当我们要显示隐藏元素时, 除了使用 show() 和 hide() 方法来, 还可以使用
+             toggle() 方法, 当程序在执行 toggle() 方法时, 如果元素原来是hide程序就执行show,
+             一句话, toggle() 方法就是在 hide与show 之间切换
+
+
+             toggle() 方法的使用和show()/ hide() 的使用一样, 4种方式:
+
+                方式一:
+                var div = $('div');
+                div.toggle(400); 动画时长单位为 毫秒
+
+                方式二:
+                div.toggle('fast'); div.toggle('slow'); div.toggle('normal');
+
+                方式三:
+                div.toggle(时长, callback);
+
+                方式四:
+                div.toggle();  此种方式没有动画
+
+
+             */
+
+
+            $(function () {
+                var btn = $('button');
+                var div = $('div');
+                var i = 0;
+
+//                btn.click(function () {
+//                    if(i== 0){
+//                        i= 1;
+//                        div.show(5000, function () {
+//                            console.log(div.css('display'));
+//                        });
+//                    }
+//                    else {
+//                        i= 0;
+//                        div.hide(5000,function () {
+//                            console.log(div.css('display'));
+//                        });
+//                    }
+//                });
+
+                btn.click(function () {
+                    div.toggle(1000);
+                });
+
+            });
+
+    </script>
+    <style>
+
+        div{
+            /*width: 100px;*/
+            /*height: 100px;*/
+            background-color: red;
+        }
+    </style>
+
+
+    </head>
+    <body>
+
+
+    <button>点击显示或者隐藏 div </button><br>
+    <div> 我 是  div </div>
+
+    </body>
+    </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery HTML 方法</title>
+
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        /**
+         $(selector).html();
+         作用: 设置或者返回 所选 元素的html 内容
+
+         其实, html() 方法就相当于是 , 原生JS 中的 div.innerHTML
+         */
+
+        $(function () {
+
+            var btn = $('button');
+            var div = $('div');
+
+            // 点击显示 HTML 内容
+            btn.parent().children('button').eq(0).click(function () {
+
+                console.log(div.html());
+
+            });
+
+            // 点击设置HTML 内容
+            btn.parent().children('button').eq(1).click(function () {
+
+                div.html('<ul>   <li>111</li>   <li>222</li>  <li>333</li>  </ul>');
+            });
+
+        });
+        
+    </script>
+    
+</head>
+<body>
+
+<button> 点击 显示  div 的 html 元素内容</button>
+<button> 点击 设置  div 的 html 元素内容</button>
+<div> 我是 div</div>
+
+
+
+</body>
+</html>

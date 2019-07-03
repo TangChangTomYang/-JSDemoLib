@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 清空元素</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        $(function () {
+            var ul = $('ul');
+            var btn = $('button');
+
+            // 清空ul 所在的li
+            btn.eq(0).click(function () {
+
+                 // 方式1
+//                 ul.html('');
+
+                // 方式2:
+                ul.empty();
+
+            });
+
+            // 删除指定的li
+            btn.eq(1).click(function () {
+
+               // 删除 第一行
+                $('li:eq(0)').remove();
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+
+<button> 删除所有的li </button>
+<button> 删除指定的li </button>
+
+
+    <div>
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 添加元素</title>
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        /**
+          添加子元素(首部插入/ 尾部添加)
+          追加 $node
+
+         1. append();
+            $(selector).append("<div></div>");
+
+
+         不常用操作: (用法根append() 方法基本一致)
+         2. appendTo()
+             作用: 同 append(), 区别是, 把 $(selector)追加到node中去
+             $(selector).appendTo(node)
+
+         3. prepend()
+             作用: 在元素的第一个子元素前面追加内容或节点
+             %(selector).prepend(node)
+
+         4. after()
+             作用: 在被选元素之后, 作为兄弟元素插入内容或节点
+             $(selector).after(node)
+
+         5.before()
+             作用: 在被选元素之前, 作为兄弟元素插入内容或节点
+             $(selector).before(node);
+
+
+
+         */
+
+            $(function () {
+
+
+                var btn = $('button');
+                var ul = $('ul');
+                var index = 0;
+
+
+                // 尾部添加
+                btn.eq(0).click(function () {
+                    // 创建一个li
+
+                    var  li = $('<li> 我 是创建的 jQuery li  尾部添加' + index + '  </li>') ;
+                    index += 1;
+                    ul.append(li);
+                });
+
+                // 首部插入
+                btn.eq(1).click(function () {
+                    // 创建一个li
+                    var  li = $('<li> 我 是创建的 jQuery li 首部插入 ' + index + ' </li>') ;
+                    index += 1;
+                    ul.prepend(li)
+                });
+
+
+                // 挪动第一个到最后
+                btn.eq(2).click(function () {
+                    // 创建一个li
+
+                    console.log('挪动第一个到最后');
+                    var firstLi = ul.children().eq(0);
+                    ul.append(firstLi);
+                });
+
+
+                // 挪动 最后一个到第一个
+                btn.eq(3).click(function () {
+                    // 创建一个li
+                    console.log(ul.children('li').length);
+                    var childCount = ul.children('li').length;
+                    if (childCount > 1){
+                        ul.prepend(ul.children('li').eq(childCount-1))
+                    }
+                });
+
+
+                // after(node) 在指定节点的后面添加一个节点 作为兄弟节点
+                btn.eq(4).click(function () {
+                    // 创建一个li
+
+                    var childCount = ul.children('li').length;
+                    if (childCount >= 1){
+
+                        // 获取中间节点 index
+                        var middleIndex =  Math.floor(childCount/2);
+                        if(childCount/2 == middleIndex && middleIndex > 0 ){
+                            middleIndex -= 1;
+                        }
+
+                        console.log(middleIndex);
+                        var middleNode =  ul.children('li').eq(middleIndex);
+                        var  li = $('<li>  我是插入指定node 的 after的节点' +index + '  </li>') ;
+                        index += 1;
+                        middleNode.after(li)
+                    }
+                });
+
+                // before(node) 在指定节点的 前面 添加一个节点 作为兄弟节点
+                btn.eq(5).click(function () {
+                    // 创建一个li
+
+                    var childCount = ul.children('li').length;
+                    if (childCount >= 1){
+
+                        // 获取中间节点 index
+                        var middleIndex =  Math.floor(childCount/2);
+                        if(childCount/2 == middleIndex && middleIndex > 0 ){
+                            middleIndex -= 1;
+                        }
+                        console.log('---------------');
+                        console.log(middleIndex);
+                        var middleNode =  ul.children('li').eq(middleIndex);
+                        var  li = $('<li>  我是插入指定node 的 before的节点' +index + '  </li>') ;
+                        index += 1;
+                        middleNode.before(li)
+                    }
+                });
+
+
+                /**
+                 * 关于 append(node) 和 prepend(node) 的总结
+                 * 1> 当调用 append(node) 或 prepend(node) 方法时, 如果node 是已近存在的, 调用完成后, node在原来的位置将删除该node
+                 */
+
+            });
+
+
+    </script>
+
+</head>
+<body>
+
+
+<button> 点击 添加节点</button>
+<button> 点击插入 新节点</button>
+<button> 挪动第一个 到最后</button>
+<button> 挪动 最后一个 到最前面</button>
+<button> 在指定元素的 后面插入, 作为兄弟元素</button>
+<button> 在指定元素的  前面插入, 作为兄弟元素</button>
+
+
+<ul>
+    <li> 我 是原生li</li>
+</ul>
+
+
+</body>
+</html>

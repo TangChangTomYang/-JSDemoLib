@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 自定义动画</title>
+
+
+    <style>
+        div{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        $(function () {
+
+            var btn = $('button');
+            var div = $('div');
+            btn.click(function () {
+                // 自定义 jQuery 动画 (不支持背景色变化)
+                var json = {'width':150, 'height':250, 'left':200, 'top':200, 'border-radius':30};
+                var duration = 1000;
+                function callback() {
+                        console.log('----自定义动画执行完成');
+                }
+                div.animate(json, duration, callback);
+            });
+        });
+
+
+        /**
+            具体支持,参看文件 http://www.w3school.com.cn/jquery/effect_animate.asp
+
+         自定义动画支持的类型:
+         backgroundPosition
+         borderWidth
+         borderBottomWidth
+         borderLeftWidth
+         borderRightWidth
+         borderTopWidth
+         borderSpacing
+         margin
+         marginBottom
+         marginLeft
+         marginRight
+         marginTop
+         outlineWidth
+         padding
+         paddingBottom
+         paddingLeft
+         paddingRight
+         paddingTop
+         height
+         width
+         maxHeight
+         maxWidth
+         minHeight
+         minWidth
+         font
+         fontSize
+         bottom
+         left
+         right
+         top
+         letterSpacing
+         wordSpacing
+         lineHeight
+         textIndent
+
+         注释：CSS 样式使用 DOM 名称（比如 "fontSize"）来设置，而非 CSS 名称（比如 "font-size"）。
+
+         */
+    </script>
+
+
+</head>
+<body>
+
+
+    <button>自定义动画</button>
+    <div></div>
+
+</body>
+</html>

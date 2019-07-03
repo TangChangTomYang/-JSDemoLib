@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 动画滑入滑出</title>
+
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        //jQuery 元素的滑入, 滑出 (即 元素的高度像 卷帘门一样 变化)
+        // slideDown (展开) 和 slideUp (收起)
+        /**
+         方式1: slideDown(时长); 时长单位为毫秒
+         var div = $('div');
+         div.slideDown(400);
+
+         方式2: slideDown('fast'); 字符串只能为 fast normal slow, fast=200 slow=600 normal=400
+
+         方式3: slideDown(时长, callback); callback 为回调函数
+
+         方式4: slideDown();  没有动画
+
+         */
+
+
+        /**
+          滑入 滑出 自动切换
+            slideTogger();   上升和下降交替, 也是有4中方式
+
+            var div = $('div');
+            div.slideTogger(speed);
+            div.slideTogger(speed,callback);
+            div.slideTogger();
+
+         */
+
+
+        $(function () {
+
+            var btn = $('button');
+            var div = $('div');
+            var  i = 0;
+            btn.click(function () {
+
+                if (i ==0){
+                    i = 1;
+                    div.slideDown('slow');
+                }
+                else {
+                    i = 0;
+                    div.slideUp('slow');
+                }
+            });
+        });
+
+    </script>
+
+
+    <style>
+        div{
+            border: 1px solid #000;
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            margin: 50px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <button>点击滑入, 滑出</button>
+
+    <div></div>
+
+</body>
+</html>
