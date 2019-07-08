@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery click 方式绑定事件</title>
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            /**
+             1. jQuery  中的click() 事件, 和JS 中的事件一样要冒泡
+             2. 通过jQuery 中的click() 方法绑定事件, 与JS 中的click 绑定方法 不同, JS 中的click 绑定的事件后面的会把前面的事件覆盖掉,而jQuery 中的click() 绑定事件不会, 有点类似于addClick
+              */
+
+
+            var b1 = $('.box1');
+            var b2 = $('.box2');
+
+            b1.eq(0).click(function () {
+                console.log('jQuery 中的click 后面的不会 覆盖前面的    box1 jQuery事件1');
+            });
+
+            b1.eq(0).click(function () {
+                console.log('box1     jQuery 中的click 后面的不会 覆盖前面的 box1 jQuery事件2');
+            });
+
+
+
+            var box1 = b1[0];
+            box1.click = function () {
+                console.log('javaScript  中的click 后面的 会 覆盖前面的    box1 JS事件1');
+            };
+            box1.click = function () {
+                console.log('javaScript  中的click 后面的 会 覆盖前面的    box1 JS事件2');
+            };
+
+
+        });
+    </script>
+
+
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="box1">
+    <div class="box2"></div>
+</div>
+
+</body>
+</html>

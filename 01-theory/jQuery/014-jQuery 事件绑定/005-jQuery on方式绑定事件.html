@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery on 方式绑定事件</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        /** 注意< 在jQuery 1.7 版本后才支持 on 的方式绑定事件
+
+         1. on 方式 (最现代的方式, 兼容 zepto (移动端类似jQuery 的一个库)), 强烈建议使用的方式 (重点!!!)
+
+         2. jQuery 1.7 版本后, jQuery 用 on 统一了所有的事件处理的方法
+
+         3. 作用: 给匹配的元素绑定事件, 包括了所有绑定事件的有点(click/ bind/ delegate)
+
+         4. 用法:
+            方式1:
+            $(selector).on('click mouseenter', 'p', func);
+            参数1 要绑定的事件类型
+            参数2 要绑定的子元素
+            参数3 绑定事件的方法
+
+            方式2:
+            $(selector).on('click', 'p',{name:zhangsan, age:18},func );
+            参数1: 事件类型
+            参数2: 子元素类型
+            参数3: json 数据块
+            参数4: 要执行的事件方法
+
+         */
+
+
+        $(function () {
+
+            // 方式1:
+            var box1 = $('.box1');
+            box1.on('click', 'p', function () {
+                console.log(this.innerHTML + '   jQuery on 方式绑定事件');
+            });
+
+
+
+            // 方式2, 可以在绑定事件时, 传参数 json
+            // 重点
+            var box2 = $('.box2');
+            box2.on('click', 'p',{name:'zhangsan', age:18},  function (event) {
+                console.log(this.innerHTML);
+                console.log(event.data);
+            });
+
+
+            // 方式3
+            var box3 = $('.box3');
+            box3.on('click',  function () {
+                console.log(' 点击 box 3');
+            });
+
+
+            // 方式4
+            var box4 = $('.box4');
+            box4.on('click', {box:"div4"}, function (event) {
+
+                console.log(this.innerHTML);
+                console.log(event.data);
+            });
+
+        });
+
+    </script>
+
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 10px;
+
+        }
+        .box3, .box4{
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+
+        }
+        p{
+            margin: 10px;
+            background-color: yellow;
+
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="box1">
+    <p> 我 是 p 1</p>
+    <p> wo shi p 2</p>
+    <p> wo  shi  p  p 3</p>
+</div>
+
+<div class="box2">
+    <p> 我 是 p 1</p>
+    <p> wo shi p 2</p>
+    <p> wo  shi  p  p 3</p>
+</div>
+
+<div class="box3">
+ 我是box 3
+</div>
+
+<div class="box4">
+ 我是box 4
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 属性操作2</title>
+
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+
+        /**
+         说明: 我们在使用 JS 时, 可以使用  jsObj.属性名 = 属性值, 给任意一个 js 对象添加属性(绑定属性)
+         也可以通过 jsObj.属性名获取 任意一个JS 对象的属性值
+
+         但是, 当我们在使用 HTML 标签时, 通常我们想要给HTML标签添加 属性, 我们只能通过行内样式 给标签添加属性,如 :
+         <input name='age'>
+         如果我们想通过 JS 代码来添加这样的 类似 name 的属性是比较麻烦的.
+
+         现在, 我们通过 jQuery 的 attr('属性名', 属性值) 就可以轻易的给 HTML 标签添加这样的 属性值
+         $(selector).attr(属性名, 属性值);  当原来有此属性就是修改属性值, 没有就是添加属性
+
+
+         一句话总结:
+         只要是 HTML 标签的属性, 不论是class id name 等 都可以使用这个 attr() 来设置或者获取
+
+
+         */
+
+
+        /**
+         * 移除 属性
+         */
+        $(function () {
+            var btn = $('button');
+            var input = $("input");
+
+
+
+            btn.eq(0).click(function () {
+                // 设置/添加 标签的属性值
+                input.attr('title', '标题属性');
+
+                console.log('-----获取 标签的 属性----------');
+                // 获取标签的属性值
+                console.log(input.attr('title'));
+                input.attr('class', input.attr('class') + ' bbb');
+                input.attr('value', 'abc')
+
+            });
+
+            // 点击删除属性
+            btn.eq(1).click(function () {
+                input.removeAttr('type');
+            });
+        });
+    </script>
+</head>
+<body>
+
+<button> 点击添加属性</button>
+<button> 点击 移除属性</button>
+
+<input type="text" class="abc">
+</body>
+</html>

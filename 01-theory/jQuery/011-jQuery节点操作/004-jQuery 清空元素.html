@@ -18,7 +18,7 @@
 //                 ul.html('');
 
                 // 方式2:
-                ul.empty();
+                ul.empty();   // 删除所有子元素
 
             });
 
@@ -26,7 +26,7 @@
             btn.eq(1).click(function () {
 
                // 删除 第一行
-                $('li:eq(0)').remove();
+                $('li:eq(0)').remove(); // 此种方式, 删除被选元素及其子元素
             });
         });
     </script>

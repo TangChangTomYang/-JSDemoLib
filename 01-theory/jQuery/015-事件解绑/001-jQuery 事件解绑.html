@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 事件解绑</title>
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        /**
+         jQuery 事件解绑
+
+
+         unbind() 方式
+         作用: 解绑 bind方式绑定的事件
+         $(selector).unbind(); // 解绑所有的事件
+         $(selector).unbind('click');// 解绑指定的事件
+
+
+         undelegate() 方式
+         作用: 解绑delegate 方式绑定的事件
+         $(selector).undelegate()// 解绑所有的 delegate 事件
+         $(selector).undelegate('click'); // 解绑所有的click事件
+
+
+
+
+
+         off解绑 on 方式的事件 (重点)
+         $(selector).off();  // 解绑匹配元素的所有事件
+         $(selector).off('click'); // 解绑匹配元素的所有click 事件
+         $(selector).off('click', '*'); //解绑所有代理的 click事件, 元素本身的事件不会被解绑
+
+
+
+
+
+
+         */
+
+
+
+
+        $(function () {
+            var btn = $('button');
+            var div = $('div');
+            var p = $('p');
+
+
+            div.click(function () {
+                console.log('div click');
+            });
+
+            div.delegate('p', 'click', function () {
+                console.log(' div 中的 p 点击 了 ');
+            });
+
+            p.on('click', function () {
+               console.log(' on 绑定的事件 执行');
+            });
+
+
+
+
+
+            // 点击解除 div 的事件
+            btn.eq(0).click(function () {
+                console.log('接触 div 绑定事件');
+                div.unbind('click');
+            });
+
+            // 点击解除 div 的事件
+            btn.eq(1).click(function () {
+                console.log('点击解除 div p 的 事件');
+                div.undelegate('click');
+
+            });
+
+            btn.eq(2).click(function () {
+                console.log('点击解除 on 绑定事件');
+//                p.off();
+
+                p.off('click');
+            });
+        });
+    </script>
+
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<button> 点击解除div绑定事件</button>
+<button> 点击解除div 中的 p 标签 绑定事件</button>
+<button> 点击解除 on 绑定事件</button>
+
+
+<div> <p>wo shi duanluo biaoqian</p> </div>
+
+
+<p> 点击执行 on 绑定的事件</p>
+
+</body>
+</html>

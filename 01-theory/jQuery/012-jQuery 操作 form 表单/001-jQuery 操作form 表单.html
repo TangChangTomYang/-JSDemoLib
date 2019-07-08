@@ -3,8 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <title>001-jQuery 操作form 表单</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        // 模拟从后台拿到数据
+        var data = [    {name:'张三', url:'http://www.baidu.com', type:'高中学生'},
+                        {name:'张三', url:'http://www.baidu.com', type:'高中学生'},
+                        {name:'张三', url:'http://www.baidu.com', type:'高中学生'},
+                        {name:'张三', url:'http://www.baidu.com',type:'高中学生'}
+                     ];
+
+        $(function () {
+            // 动态创建表格
+
+            var input = $('input');
+            input.click(function () {
+                console.log('------------------------');
+                var innerHTML = '';
+                for (var i = 0; i < data.length; i++){
+                    var info = data[i];
+
+                    innerHTML +=    '<tr>' +
+                                    '<td>'+ info.name +'</td>' +
+                                    '<td>'+ info.url +'</td>' +
+                                    '<td>'+ info.type + '</td>' +
+                                    '</tr>';
+                }
+
+                var tbody = $('tbody');
+
+                console.log(innerHTML);
+                tbody.html(innerHTML);
+
+            });
+
+
+        });
+    </script>
+
+
+    <style>
+        table{
+            /*为表格设置合并边框模型 这个很重要*/
+            border-collapse: collapse;
+            border-spacing: 0px;
+            border: 2px solid #cccccc;
+
+        }
+
+        th, td{
+            border: 2px solid #000;
+            color: #404046;
+            padding: 10px;
+        }
+
+        th{
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+
+        td{
+            font:  16px "微软雅黑";
+        }
+
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+
+        tbody tr:hover{
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+
+
+    </style>
+
 </head>
 <body>
+
+<input type="button"  value="点击获取数据" id="btnGet">
+<table>
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>详细信息</th>
+            <th>分类说明</th>
+        </tr>
+    </thead>
+    <tbody id="tbData">
+        <tr>
+            <!--<td>姓名</td>-->
+            <!--<td>详细信息</td>-->
+            <!--<td>分类说明</td>-->
+        </tr>
+    </tbody>
+
+</table>
+
 
 </body>
 </html>

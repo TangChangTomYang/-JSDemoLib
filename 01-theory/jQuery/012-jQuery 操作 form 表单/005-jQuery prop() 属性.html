@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery prop() 属性</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+
+        /**
+         $(selector).prop()  方法 与 $(selector).attr() 方法的差异
+
+         相同点:
+         1> prop() 方法 和attr() 方法, 都可以用来给标签设置属性, 也都可以用来获取标签的指定属性
+
+
+         不同点:
+         1> 同一个标签,相同的属性名, 使用 prop() 方法和 attr() 方法获取到的属性值类型可能是不同的
+         比如: input 标签的 checked 属性值, prop() 方法获取到的值是 boolean 类型的值, 而attr() 方法获取到的值可能是 undefined 或字符串
+         2> 设置属性时也有差异, 通过 prop() 设置的属性在 html 行内标签上不会显示, 但是网页上会出现状态的变化, 而 通过attr() 设置的值会在HTML 标签上显示且在网页上有状态显示
+         3> 在修改标签的状态时, 比如 input 标签的checked 状态, 尽量使用 prop()  而 不要使用 attr()
+
+
+         总结:
+         1> 想要修改了属性值后在 html 上显示内容的时候使用 attr() 方法
+         2> attr() 方法一般用来设置文字内容的属性
+         3> 使用 attr() 修改 input 的checked 属性值时, 只能执行一次, 点多次就不行了
+
+
+         3> prop() 方法一般用于设置 或修改标签的状态属性, 比如, input 标签的checked 状态
+         4> prop() 方法修改标签的 属性状态后, 一般不会在 html 标签上显示
+         5> 一般 网页上的交互动作, 不影响 html 上属性值的显示的属性 用prop()
+         一句话, prop() 属性一般用于控制标签的状态
+
+
+
+         通过prop() 修改的属性值, 通过 attr() 方法可能获取不到
+         但是通过 attr() 方法修改的属性通过 prop() 可以获取到, 但是值的类型可能不同
+
+
+         form 中的特殊属性 使用prop() 方法, 而不使用 attr() 方法
+         */
+
+
+        $(function () {
+            var input = $('input');
+            var btn = $('button');
+
+            btn.eq(0).click(function () {
+                console.log('---------prop 设置属性');
+                input.eq(0).prop('checked', "checked");
+            });
+
+            btn.eq(1).click(function () {
+                console.log('---------prop 获取属性值');
+                console.log(input.eq(0).prop('checked'));
+            });
+
+
+
+
+            btn.eq(2).click(function () {
+                console.log('---------attr 设置属性');
+                input.eq(0).attr('checked', '');
+            });
+
+            btn.eq(3).click(function () {
+                console.log('---------attr 获取属性值');
+                console.log(input.eq(0).attr('checked'));
+            });
+
+
+            btn.eq(4).click(function () {
+                input.eq(0).removeAttr('checked');
+                //input.eq(0).attr('checked', 'b');
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+<button> 点击 prop() 修改属性 </button>
+<button> 点击 prop() 获取 属性 </button>
+
+
+
+<button> 点击 attr() 修改属性 </button>
+<button> 点击 attr() 获取属性 </button>
+
+
+<button> 点击 prop() 获取 属性 </button>
+
+<form action="http://www.baidu.com">
+
+    <input type="checkbox" value="man">
+
+</form>
+
+
+</body>
+</html>

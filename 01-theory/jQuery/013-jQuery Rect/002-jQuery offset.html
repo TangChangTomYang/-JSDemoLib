@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery offset</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+
+        body{
+            height: 5000px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            padding: 30px;
+            margin: 20px;
+            position: relative;
+        }
+
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+
+        }
+
+
+
+    </style>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        /** 坐标值
+         1. offset() 方法, 返回或者设置匹配元素 相对于文档的偏移量
+
+             $(selector).offset();  获取偏移量
+             $(selector).offset({top:100,left:100});  设置偏移量
+             $(selector).offset().left;
+             $(selector).offset().top;
+
+             注意:
+                1> offset的值是相对于 document 的位置
+                2> 设置offset后, 如果元素没有定位(默认是 static), 则被修改为relativ
+
+
+         2. position() 获取相对于其最近的 具有定位的父元素的位置, 表示获取其在定位父元素中的位置
+             注意, 只能获取不能设置
+
+
+         3. scrollTop() 获取或者设置元素垂直方向滚动的位置
+               $(selector).scrollTop(100);
+
+         4. scrollLeft) 获取或者设置元素水平方向 滚动的位置
+                $(selector).scrollLeft(100);
+
+         对ScrollTop的理解:
+            垂直滚动条位置 是可滚动区域 在 可视区域上方的 被隐藏区域的高度
+            如果滚动条在最上方没有滚动 或者 当前 元素没有出现滚动条 那么这个距离为 0
+
+            案例: 固定导航栏
+
+
+         */
+
+
+
+        $(function () {
+            var box1 = $('.box1');
+            var box2 = $('.box2');
+
+            var btn = $('button');
+
+            // 点击获取 box1 在document 中的 offset
+            btn.eq(0).click(function () {
+                console.log(box1.eq(0).offset());
+            });
+
+            // 点击获取 box2 在document 中的 offset
+            btn.eq(1).click(function () {
+                console.log(box2.eq(0).offset());
+            });
+
+
+
+            // 点击获取 box1 在 定位父标签中的 position
+            btn.eq(2).click(function () {
+                console.log(box1.eq(0).position());
+            });
+
+            // 点击获取 box2 在 定位父标签中的 position
+            btn.eq(3).click(function () {
+                console.log(box2.eq(0).position());
+            });
+
+
+            // 点击修改 box1, box2 的 offset
+            btn.eq(4).click(function () {
+                box1.offset({'left':120, 'top':60});
+                box2.offset({'left':120, 'top':60});
+            });
+
+
+        });
+
+
+    </script>
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <button> 点击获取 box1 的 offset()</button>
+    <button> 点击获取 box2 的 offset()</button>
+    <button> 点击获取 box1 的position()</button>
+    <button> 点击获取 box2 的position()</button>
+    <button> 点击修改 box1, box2 的 offset</button>
+</body>
+</html>

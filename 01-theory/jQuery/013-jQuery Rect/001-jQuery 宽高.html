@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 宽高</title>
+
+
+    <style>
+
+        *{
+            padding:0px;
+            margin: 0px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            margin: 30px;
+
+            border: 10px solid blue;
+            background-color: red;
+        }
+    </style>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+
+        /**
+         jQuery 尺寸
+
+         在jQuery 中 有多种方式可以获取元素的尺寸
+         $(selector).width();  获取元素的尺寸, 不包含padding 和 border
+         $(selector).innerWidth(); 获取元素的尺寸, 包含paddiing
+         $(selector).outerWidth(); 获取元素的尺寸, 包含 padding 和 border
+
+
+         通过上线的方法也可以修改尺寸 $(selector).width(200);
+         */
+
+
+
+        $(function () {
+            var div = $('div');
+
+            // 获取元素的宽度  (不包含 padding)
+            div.width();
+
+            // 获取元素的 inner宽度 ( 宽度 + 左右 padding)
+            div.innerWidth();
+
+            // 获取元素的 outer 宽度 ( 宽度 + 左右padding + 左右border)
+            div.outerWidth();
+
+            // 如果要修改元素的尺寸, 就填写参数即可
+            // div.width(180);
+
+
+        });
+    </script>
+
+
+
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>

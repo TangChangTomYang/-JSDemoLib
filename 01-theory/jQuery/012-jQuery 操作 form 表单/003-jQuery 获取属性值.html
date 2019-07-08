@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 获取属性值</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+
+        /**
+         在jQuery 中我们可以通过 $(selector).att('属性名') 来获取对应的属性值
+
+
+         也可以通过  $(selector).att('属性名', '属性值'), 来给给指定的标签设置 对应的属性
+         */
+
+
+        $(function () {
+
+            var btn = $('button');
+
+            btn.eq(0).click( function () {
+                var a = $('a');
+                console.log( a.attr('href'));
+            });
+
+            btn.eq(1).click( function () {
+                var form = $('form');
+                console.log( form.attr('action'));
+            });
+
+            btn.eq(2).click( function () {
+                var input = $('input');
+                console.log( input.attr('type'));
+                console.log( input.attr('name'));
+            });
+
+            btn.eq(3).click( function () {
+                var img = $('img');
+                console.log( img.attr('src'));
+            });
+
+
+
+
+
+            // 修改 指定元素 的属性值
+            btn.eq(4).click( function () {
+                var a = $('a');
+                a.attr('href','http://www.abc.com');
+            });
+
+            btn.eq(5).click( function () {
+                var form = $('form');
+                form.attr('action', 'http://form.com');
+            });
+
+            btn.eq(6).click( function () {
+                var input = $('input');
+                input.attr('type', 'password');
+                input.attr('name', 'age');
+            });
+
+            btn.eq(7).click( function () {
+                var img = $('img');
+                img.attr('src', '../img.jpg') ;
+            });
+
+
+
+        });
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+<button> 点击获取超链接的地址</button>
+<button> 点击获取 form 的 url</button>
+<button> 点击获取 input 标签的属性值</button>
+<button> 点击获取  img 标签的地址</button>
+
+<br>
+<button> 点击 修改 超链接的地址</button>
+<button> 点击 修改 form 的 url</button>
+<button> 点击 修改 input 标签的属性值</button>
+<button> 点击 修改  img 标签的地址</button>
+
+<a href="http://www.baidu.com"> 我是超链接</a>
+<a href="http://www.baidu.comfasdfasdf"> 我是超链接</a>
+
+<form action="http://www.baidu.com">
+    <input type="text" name="account">
+</form>
+
+<img src="../abc.jpg" alt="">
+</body>
+</html>
