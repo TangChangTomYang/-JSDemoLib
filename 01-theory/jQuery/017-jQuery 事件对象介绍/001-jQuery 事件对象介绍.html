@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 事件对象介绍</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        /**
+         jQuery 事件对象介绍
+
+         1. event.data                  传递给事件处理程序的额外数据
+         2. event.currentTarget         等同于this, 当前DOM 对象
+         3. event.pageX                 鼠标相对于文档左部边缘的位置
+         4. event.target                触发事件源, 不一定 == this
+         5. event.stopPropagation()     阻止事件冒泡
+         6. event.preventDefault()      阻止默认行为
+         7. event.type                  事件类型, click dbclick
+         8. event.which                 鼠标按键类型: 左1 中2 右3
+         9. event.keyCode               键盘按键代码
+
+         
+         */
+
+
+
+        $(function () {
+            // 点击获取 jQuery 事件 对象
+            $(document).click(function (event) {
+                // 传递给 jQuery 事件的 额外数据
+                console.log(event.data);
+                // currentTarget 等同于this, 表示的是当前DOM 对象
+                console.log(event.currentTarget);
+                console.log(this);
+
+                // 获取鼠标相对于文档左边的距离
+                console.log(event.pageX);
+                // 获取鼠标相对于文档顶部的距离
+                console.log(event.pageY);
+
+                // 获取,触发事件的源 对象
+                console.log(event.target);
+
+                // 阻止事件冒泡
+                console.log(event.stopPropagation());
+
+                // 阻止默认行为
+                console.log(event.preventDefault());
+
+                // 获取事件类型 click  dbclick
+                console.log(event.data);
+
+                // 获取 鼠标 按键的类型 左1 中2 右3
+                console.log(event.which);
+
+
+                // 获取键盘的 编号
+                console.log(event.keyCode);
+            });
+        });
+
+    </script>
+
+    <style>
+        body{
+            width: 5000px;
+            height: 5000px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

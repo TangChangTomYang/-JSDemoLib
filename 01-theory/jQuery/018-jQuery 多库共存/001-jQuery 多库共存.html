@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 多库共存</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script src="../jquery-1.8.2.min.js"></script>
+    <script>
+        /**
+          1. 什么是多库共存?
+             多个不同版本的jQuery 库在使用时, 各司其职, 相互间不冲突
+          2. 什么是多库冲突?
+             多个版本的jQuery 库共存时,  同时使用 $ 或 jQuery , 程序不知道那个 $ 对应的是那个版本, 容易出现误操作
+          3. 多库共存的解决方案?
+
+
+
+         */
+
+
+        $(function () {
+
+            var btn = $('button');
+            btn.eq(0).click(function () {
+                console.log('==============');
+
+                if ($){
+                    // 方式1  废弃当前的jQuery库 的$使用权
+                    console.log( '废弃jQuery: ' + $.fn.jquery);
+                    $.noConflict();
+
+                }
+                console.log(jQuery.fn.jquery);
+            });
+
+            btn.eq(1).click(function () {
+                console.log('==============');
+
+                if ($ || jQuery){
+                    // 方式2  废弃当前的jQuery库 的$ 和 jQuery 使用权, 并取别名
+                    console.log( '废弃jQuery $ : ' + $.fn.jquery);
+                   $.noConflict(true);
+
+                }
+            });
+            btn.eq(2).click(function () {
+                // 放弃使用权 并取别名
+                console.log('=====jQuery库取别名=========');
+                var jQ1 = $.noConflict(true);
+                var jQ2 = $.noConflict(true);
+
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+<button>点击 废弃当前的jQuery库 的$使用权</button>
+<button>点击 废弃当前的jQuery库 的$ 和 jQuery使用权</button>
+<button>点击 放弃所有jQuery 的 $ 和jQuery使用权, 并给其取别名</button>
+
+
+
+
+</body>
+</html>

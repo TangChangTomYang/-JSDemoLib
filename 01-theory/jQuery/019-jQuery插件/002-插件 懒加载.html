@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-1.11.1.js"></script>
+    <!--导入懒加载的库-->
+    <script src="../jquery.lazyload.min.js"></script>
+    <script>
+        $(function () {
+            var btn = $('button');
+
+            btn.click(function () {
+                // 懒加载的使用方式
+                // step1 引入包, 必须在 jQuery 包之后
+                
+                var img = $('img');
+                img.lazyload();
+                    
+
+            });
+
+        });
+    </script>
+
+    <style>
+        img{
+            border: 1px solid #000;
+        }
+    </style>
+
+</head>
+<body>
+    <button>点击加载图片</button>
+
+    <!--注意: -->
+    <!--1> 使用jQuery 懒加载库时, 不能直接给 img 标签设置 src 属性, 而是 设置 data-original 替代-->
+
+    <img class="lazy" data-original="../02.jpg"   width="640" height="480">
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义jQuery插件</title>
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        // 自定义插件方法 ,  通过给 $.fn 绑定方法后, 以后jQuery 中就可以 使用 $(selector).xxx() 方法调用了
+        $.fn.setRed = function () {
+            console.log(this);
+            console.log(this[0]);
+
+            console.log('------ 调用自定义插件方法');
+        }
+    </script>
+    <script>
+        
+        $(function () {
+            var btn = $('button');
+            var div = $('div');
+            btn.click(function () {
+                div.setRed();
+            });
+        });
+        
+    </script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+    </style>
+        
+</head>
+<body>
+
+
+<button> 点击 掉哦</button>
+
+<div></div>
+
+</body>
+</html>

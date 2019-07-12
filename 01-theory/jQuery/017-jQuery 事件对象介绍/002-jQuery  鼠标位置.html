@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 鼠标位置</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        $(function () {
+
+            // 点击获取鼠标 距离文档 document 左边和上边的距离
+            $(document).click(function () {
+
+                console.log(event);
+
+                // 注意 获取到的 pageX 和 pageY 只是 鼠标当前点到
+                // document 左边和上边的距离, 和 元素 左边和上边被卷去了多少无关
+
+                console.log(event.pageX);
+                console.log(event.pageY);
+            });
+        });
+    </script>
+
+
+    <style>
+        body{
+            width: 5000px;
+            height: 5000px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回车换行</title>
+
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+
+            // 当键盘 弹起时 就会执行这个方法
+            // 注意任意一个键盘 按钮 被按下后弹起时 都会执行这个方法
+            $(document).on('keyup',function () {
+
+                var keyCode = event.keyCode;
+                var returnKeyCode = 13; // 回车键的 编号是 13
+                if(keyCode == returnKeyCode){
+                    console.log(' 用户 点击了回车键');
+
+                    console.log(event.target);
+
+                    // 判断标签是否是 input标签
+                    var node = event.target;
+
+                    // 在HTML 和 CSS 中 是对大小写不敏感的
+                    if (node.nodeName == 'INPUT'){
+                        // 当前input 失去光标
+                        // 下一个input 获取光标
+                        // focus();, js 和 jQuery 都有此方法, 专门用于 input 聚焦
+//                        $(node).next().next().focus();   // 这个是调用jQuery 中的focus方法
+                        $(node).next().next()[0].focus(); // 调用JS 中的focus方法
+
+
+                    }
+                }
+
+
+            })
+        });
+    </script>
+
+    <style>
+    </style>
+</head>
+<body>
+
+
+<p>账号</p><input type="text">
+<p>密码</p><input type="text">
+<p>姓名</p><input type="text">
+<p>性别</p><input type="text">
+<p>家庭住址</p><input type="text">
+<p>学校</p><input type="text">
+<p>爱好</p><input type="text">
+
+</body>
+</html>

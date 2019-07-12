@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javaScript 相等的理解</title>
+
+    <script>
+        /**
+
+         javaScript 中提供三种 不同的值比较操作
+
+
+
+         1. 宽松相等 ==  , 这种比较内部可能会出现类型转换
+         2. 严格相等 === , 此种方式不会进行类型转换, 类型不同直接 返回false
+
+
+         比如:
+         var str1 = 'i love you';  是 'string' 类型
+         var str2 = new String('i love you'); 是 object 类型
+
+
+         当我们使用
+         str1 == str2 时, 返回 true, 有类型之间的相互装换
+
+         当我们使用 str1 === str2 时, 返回false, 因为 'string' 和 object 不是同种类型直接 返回 false
+
+         */
+
+    </script>
+    <!--<style>-->
+        <!--div{-->
+            <!--background-color: red;-->
+        <!--}-->
+
+        <!--p{-->
+            <!--background-color: green;-->
+        <!--}-->
+    <!--</style>-->
+
+    <STYLE>
+         DIV{
+             background-color: RED;
+         }
+
+        P{
+            background-color: YELLOW
+        }
+    </STYLE>
+
+</head>
+<body>
+
+
+    <DIV> WO SHI DIV </DIV>
+    <P> WO SHI P BIAO QIAN</P>
+
+</body>
+</html>

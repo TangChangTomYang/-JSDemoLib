@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选input 内容</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+
+            // 获取所有的input标签
+            var input = $('input');
+            // 所有的input标签 回车换行
+            // 当在input 标签上 回车时, 就会触发此方法
+            input.on('keyup',function () {
+
+                // input 标签 进入编辑模式
+                $(this).next().next().focus();
+            });
+
+            // 当鼠标进入 input 标签时 就会触发此方法
+            input.on('mouseenter',function () {
+                $(this).select(); // input 标签内所有的 文字被选中
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+
+<p>账号</p><input type="text" value="input内容荣">
+<p>密码</p><input type="text" value="input内容荣">
+<p>姓名</p><input type="text" value="input内容荣">
+<p>性别</p><input type="text" value="input内容荣">
+</body>
+</html>

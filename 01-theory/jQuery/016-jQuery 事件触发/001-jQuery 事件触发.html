@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 事件触发</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        /**
+         jQuery 事件触发
+
+
+
+         */
+
+        $(function () {
+            $(document).on('click', function () {
+                console.log('--------事件触发');
+            });
+
+            // 我们平时给 标签元素添加的 点击事件, 都是要我们 点击了元素标签后 才执行
+            // 但是有时我们想要  在某种情景下, 直接由代码触发, 此时有们就 会用到事件触发.
+
+            // 事件触发, 直接调用方法, 就相当于用户点击了
+            // 方式1
+            //$(document).click();
+
+            //方式2:
+            //$(document).trigger('click');
+
+            //方式3:
+            $(document).triggerHandler('click');
+
+
+            /**
+             注意:
+             方式1/ 方式2 可以触发浏览器的默认行为
+             方式3不能触发浏览器的默认行为
+             */
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

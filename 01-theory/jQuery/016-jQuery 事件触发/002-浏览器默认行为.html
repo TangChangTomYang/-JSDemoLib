@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 浏览器默认行为</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        $(function () {
+
+            var input = $('input');
+
+            input.on('focus',function () {
+                console.log(' input 标签 获取到了焦点');
+            });
+
+            input.on('blur',function () {
+               console.log('input 标签 失去了焦点');
+                console.log(this.value);
+            });
+
+
+            var btn = $('button');
+            btn.eq(0).click(function () {
+                // 触发浏览器的默认行为  获取焦点
+                input.trigger('focus');
+                console.log(' trigger 方法触发浏览器的默认行为');
+            });
+
+            btn.eq(1).click(function () {
+                // triggerHander 不能触发浏览器的默认行为   方法有响应, 但是网页上的状态不会变化
+                input.triggerHandler('focus');
+                console.log(' triggerHandler 方法 不能 触发浏览器的默认行为');
+            });
+
+
+
+            // 浏览器的默认行为  和修改 页面元素的 input 的selected属性 差不多, 很多 怪异行为
+
+        });
+    </script>
+</head>
+<body>
+
+<button>点击触发浏览器默认行为1</button>
+<button>点击触发浏览器默认行为2</button>
+
+
+<input type="text">
+</body>
+</html>

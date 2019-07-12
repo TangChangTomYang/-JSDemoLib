@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五角星评分</title>
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        $(function () {
+            var kx = '☆';
+            var sx = '★';
+
+            var li = $('li');
+
+            li.on('mouseenter',function () {
+                // jQuery end() 方法, 结束当前链条中最近的帅选操作, 并将匹配元素集合还原为之前的状态
+                $(this).text(sx).prevAll().text(sx).end().nextAll().text(kx);
+            });
+
+
+            li.on('mouseleave',function () {
+               $(this).prevAll().text(kx).nextAll(kx);
+            });
+
+
+        });
+    </script>
+
+
+    <style>
+        li{
+            font-size: 40px;
+            color:  #ff3100;
+            float: left;
+            list-style: none;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+<ul>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+</ul>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试自定义jQuery 方法</title>
+    <script src="../jquery-1.11.1.js"></script>
+    <script src="YR_jQuery_lib_1.1.0.js"></script>
+    <script>
+        $(function () {
+            var div = $('div');
+            var btn = $('button');
+            btn.click(function () {
+                div.setColor('red');
+            });
+
+        });
+    </script>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button> 点击测试 自定义jQuery 库 </button>
+    <div></div>
+    <div></div>
+
+</body>
+</html>

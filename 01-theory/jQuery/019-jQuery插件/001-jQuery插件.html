@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 插件 之 背景色改变</title>
+
+    <script src="../jquery-1.11.1.js"></script> 
+    <!--引入颜色插件-->
+    <script src="../jquery.color.js"></script>
+
+    <script>
+        $(function () {
+            var btn = $('button');
+            btn.eq(0).click(function () {
+                var div = $('div');
+                console.log('----');
+                div.animate({'backgroundColor':'red'},2000,function () {
+                    console.log('----动画执行完毕');
+                });
+            });
+
+            btn.eq(1).click(function () {
+                var div = $('div');
+                console.log('----');
+                div.animate({'width':300 ,'backgroundColor':'red'},2000,function () {
+                    console.log('----动画执行完毕');
+                });
+            });
+        });
+    </script>
+    
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<button>点击修改背景色</button>
+<button>点击修改背景色 变换尺寸</button>
+
+<div> </div>
+
+
+</body>
+</html>

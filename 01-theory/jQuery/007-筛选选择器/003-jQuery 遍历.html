@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 遍历</title>
+
+
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        /**
+         jQuery each 遍历标签
+         */
+
+        $(function () {
+            var li = $('li');
+
+
+
+            var btn = $('button');
+            btn.on('click',function () {
+                // 使用jQuery 的 each() 方法, 遍历所有的 li 标签
+                li.each(function (index , ele) { // 说明: index 是当前遍历的序号, ele 是当前遍历到的 HTML 元素
+                    console.log(index);
+                    console.log(ele.innerHTML);
+                });
+            });
+
+        });
+    </script>
+
+
+    <style>
+
+
+
+        li{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+            list-style: none;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+
+<button>点击 jQuery 遍历 jQuery 中的 li标签</button>
+
+<ul>
+    <li>1号</li>
+    <li>2号</li>
+    <li>3号</li>
+    <li>4号</li>
+    <li>5号</li>
+    <li>6号</li>
+    <li>7号</li>
+    <li>8号</li>
+    <li>9号</li>
+    <li>10号</li>
+</ul>
+
+</body>
+</html>
