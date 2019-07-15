@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试get</title>
+</head>
+<body>
+
+
+<!-- 挡在使用 form 表单上传文件时
+	 1. 要设置 如何对数据进行编码 enctype
+	 2. http 请求方法必须为 post
+
+
+	 application/x-www-form-urlencoded   此种编码, 默认,在发送前对所有字符进行编码(将空格转换为 "+" 符号, 特殊字符转换为 ASCII HEX 值)
+	 multipart/form-data    此种编码, 不对字符编码, 当使用有文件上传控件的表单时, 该值是必须的
+	 text/plain			此种编码, 将空格转换为 "+"符号, 但不编码特殊字符
+ -->
+
+
+<!-- 即上传文件时, 必须设置 enctype 为 multipart/form-data -->
+<form action="uploadFile.php" method="post" enctype="multipart/form-data">
+
+    <input type="file" ><br> 
+    <input type="submit">
+    
+</form>
+
+</body>
+</html>
